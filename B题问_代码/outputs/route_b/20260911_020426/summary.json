@@ -1,0 +1,77 @@
+{
+  "episodes": 20,
+  "fixed": {
+    "episodes": 10,
+    "all_clear_rate": 1.0,
+    "mean_cleared": 13.5,
+    "mean_virtual_time_s": 8418.363918205925,
+    "median_virtual_time_s": 8456.487250714854,
+    "mean_move_distance_m": 37522.3195910296,
+    "mean_detect_count": 153.6,
+    "mean_switch_count": 78.4,
+    "mean_decision_steps": 0.0
+  },
+  "active": {
+    "episodes": 10,
+    "all_clear_rate": 1.0,
+    "mean_cleared": 13.5,
+    "mean_virtual_time_s": 7948.024674122544,
+    "median_virtual_time_s": 8029.299961089302,
+    "mean_move_distance_m": 34955.623370612695,
+    "mean_detect_count": 160.5,
+    "mean_switch_count": 86.9,
+    "mean_decision_steps": 126.9
+  },
+  "paired": {
+    "clustered:2000": {
+      "active_minus_fixed_time_s": -1063.6241244273779,
+      "active_minus_fixed_move_m": -5558.1206221368775,
+      "same_clear_result": true
+    },
+    "edge:2000": {
+      "active_minus_fixed_time_s": -795.903118447879,
+      "active_minus_fixed_move_m": -4234.515592239393,
+      "same_clear_result": true
+    },
+    "max_error:2000": {
+      "active_minus_fixed_time_s": -450.32980495775155,
+      "active_minus_fixed_move_m": -2471.6490247887705,
+      "same_clear_result": true
+    },
+    "min_radius:2000": {
+      "active_minus_fixed_time_s": -391.0896772050619,
+      "active_minus_fixed_move_m": -2165.448386025302,
+      "same_clear_result": true
+    },
+    "uniform:2000": {
+      "active_minus_fixed_time_s": -448.230628351982,
+      "active_minus_fixed_move_m": -2436.153141759911,
+      "same_clear_result": true
+    },
+    "clustered:2001": {
+      "active_minus_fixed_time_s": -774.5299395288412,
+      "active_minus_fixed_move_m": -4107.649697644207,
+      "same_clear_result": true
+    },
+    "edge:2001": {
+      "active_minus_fixed_time_s": 41.13989156713433,
+      "active_minus_fixed_move_m": 30.699457835689827,
+      "same_clear_result": true
+    },
+    "max_error:2001": {
+      "active_minus_fixed_time_s": -432.741618124408,
+      "active_minus_fixed_move_m": -2343.7080906220363,
+      "same_clear_result": true
+    },
+    "min_radius:2001": {
+      "active_minus_fixed_time_s": 45.9148604202328,
+      "active_minus_fixed_move_m": -30.425697898841463,
+      "same_clear_result": true
+    },
+    "uniform:2001": {
+      "active_minus_fixed_time_s": -433.99828177789095,
+      "active_minus_fixed_move_m": -2349.9914088894293,
+      "same_clear_result": true
+    }
+  }
+}

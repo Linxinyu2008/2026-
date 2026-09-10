@@ -1,0 +1,66 @@
+{
+  "q1_localization": {
+    "episodes": 3,
+    "seed": 51001,
+    "status_counts": {
+      "OK": 3
+    },
+    "ok_rate": 1.0,
+    "mean_diameter_m": 62.56616274728392,
+    "max_diameter_m": 70.60793394927552
+  },
+  "q2_second_detection": {
+    "episodes": 3,
+    "seed": 52001,
+    "success_rate": 1.0,
+    "mean_receive_ratio": 1.0,
+    "min_receive_ratio": 1.0,
+    "mean_worst_diameter_m": 87.2930599091443,
+    "max_worst_diameter_m": 92.59736193436508
+  },
+  "q3_route_c": {
+    "episodes": 3,
+    "targets": 16,
+    "profile": "mixed",
+    "model": null,
+    "summary": [
+      {
+        "strategy": "random",
+        "episodes": 3,
+        "success_rate": 1.0,
+        "mean_cleared_rate": 1.0,
+        "mean_localization_clear_time_s": 1743.797713400612,
+        "mean_virtual_time_s": 27900.763414409794,
+        "std_virtual_time_s": 4871.810226806421,
+        "mean_decision_steps": 139.66666666666666,
+        "mean_detect_count": 155.0,
+        "mean_switch_count": 133.33333333333334
+      },
+      {
+        "strategy": "fixed_scan",
+        "episodes": 3,
+        "success_rate": 1.0,
+        "mean_cleared_rate": 1.0,
+        "mean_localization_clear_time_s": 583.8361963692847,
+        "mean_virtual_time_s": 9341.379141908556,
+        "std_virtual_time_s": 1306.9427295590906,
+        "mean_decision_steps": 135.0,
+        "mean_detect_count": 155.0,
+        "mean_switch_count": 74.0
+      },
+      {
+        "strategy": "active",
+        "episodes": 3,
+        "success_rate": 1.0,
+        "mean_cleared_rate": 1.0,
+        "mean_localization_clear_time_s": 693.3873669792182,
+        "mean_virtual_time_s": 11094.197871667491,
+        "std_virtual_time_s": 1617.6878260706553,
+        "mean_decision_steps": 135.0,
+        "mean_detect_count": 155.0,
+        "mean_switch_count": 87.0
+      }
+    ]
+  },
+  "note": "这是本地规则仿真回测，不替代真实模拟器演练。"
+}

@@ -1,0 +1,133 @@
+{
+  "q1_empty_misclassified": "UNBOUNDED_REGION",
+  "q2_discrete_receive_not_continuous_guarantee": {
+    "sample_receive_ratio": 1.0,
+    "valid_true_target": [
+      5.1,
+      0
+    ],
+    "valid_reception_radius": 1000,
+    "distance_from_second_point": 1094.9
+  },
+  "q2_outside_disk_particles": {
+    "outside_count": 205,
+    "total": 1025
+  },
+  "q2_infinite_solution_reports_ok": {
+    "status": "OK",
+    "worst_diameter": "inf"
+  },
+  "q3_false_bounded_region": {
+    "stations": [
+      [
+        -35.24933083584688,
+        2.400589704310894
+      ],
+      [
+        -98.30400010208645,
+        9.657155745444513
+      ],
+      [
+        64.4317012379502,
+        9.98039576400349
+      ]
+    ],
+    "bearings": [
+      -0.6061595771781894,
+      -1.1047994366983005,
+      -1.5017171251752286
+    ],
+    "q1_status": "UNBOUNDED_REGION",
+    "q3_summary": {
+      "status": "OK",
+      "center": [
+        477.8780561942314,
+        -2.947085376427052
+      ],
+      "radius_m": 277.1823478527243,
+      "area_m2": 4056.800149214428,
+      "vertices": [
+        [
+          200.78335931270246,
+          4.023059620791153
+        ],
+        [
+          727.326889198803,
+          -18.982137718616197
+        ],
+        [
+          505.52392007118885,
+          6.117821968543889
+        ]
+      ]
+    },
+    "valid_target": [
+      1000,
+      0
+    ],
+    "target_distance_from_reported_center": 522.1302610610977
+  },
+  "q3_same_training_scene_on_reset": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "q3_unknown_count_wrong_cleared_rate": [
+    {
+      "seed": 61001,
+      "cleared_count": 0,
+      "terminated": false,
+      "truncated": true,
+      "termination_reason": "step_limit",
+      "virtual_time_s": 30.0,
+      "move_distance_m": 0.0,
+      "detect_count": 5,
+      "switch_count": 5,
+      "decision_steps": 1,
+      "strategy": "random",
+      "target_count": 0,
+      "cleared_rate": 1.0,
+      "success": 0
+    },
+    {
+      "seed": 61001,
+      "cleared_count": 0,
+      "terminated": false,
+      "truncated": true,
+      "termination_reason": "step_limit",
+      "virtual_time_s": 29.0,
+      "move_distance_m": 0.0,
+      "detect_count": 5,
+      "switch_count": 4,
+      "decision_steps": 1,
+      "strategy": "fixed_scan",
+      "target_count": 0,
+      "cleared_rate": 1.0,
+      "success": 0
+    },
+    {
+      "seed": 61001,
+      "cleared_count": 0,
+      "terminated": false,
+      "truncated": true,
+      "termination_reason": "step_limit",
+      "virtual_time_s": 29.0,
+      "move_distance_m": 0.0,
+      "detect_count": 5,
+      "switch_count": 4,
+      "decision_steps": 1,
+      "strategy": "active",
+      "target_count": 0,
+      "cleared_rate": 1.0,
+      "success": 0
+    }
+  ],
+  "clear_estimated_seconds_at_same_point_other_channel": 6.0
+}

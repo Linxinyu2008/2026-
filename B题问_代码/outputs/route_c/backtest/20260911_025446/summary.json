@@ -1,0 +1,47 @@
+{
+  "run_id": "20260911_025446",
+  "episodes": 2,
+  "seed_start": 20001,
+  "targets": 10,
+  "profile": "uniform",
+  "strategies": [
+    "random",
+    "fixed_scan",
+    "active"
+  ],
+  "summary": [
+    {
+      "strategy": "random",
+      "episodes": 2,
+      "success_rate": 1.0,
+      "mean_cleared_rate": 1.0,
+      "mean_virtual_time_s": 24302.937582736544,
+      "std_virtual_time_s": 1034.971681938574,
+      "mean_decision_steps": 122.5,
+      "mean_detect_count": 163.5,
+      "mean_switch_count": 148.5
+    },
+    {
+      "strategy": "fixed_scan",
+      "episodes": 2,
+      "success_rate": 1.0,
+      "mean_cleared_rate": 1.0,
+      "mean_virtual_time_s": 7915.261021705807,
+      "std_virtual_time_s": 89.48584890348957,
+      "mean_decision_steps": 114.5,
+      "mean_detect_count": 163.5,
+      "mean_switch_count": 111.5
+    },
+    {
+      "strategy": "active",
+      "episodes": 2,
+      "success_rate": 1.0,
+      "mean_cleared_rate": 1.0,
+      "mean_virtual_time_s": 8964.51851061858,
+      "std_virtual_time_s": 800.4464707538064,
+      "mean_decision_steps": 114.5,
+      "mean_detect_count": 163.5,
+      "mean_switch_count": 115.5
+    }
+  ]
+}

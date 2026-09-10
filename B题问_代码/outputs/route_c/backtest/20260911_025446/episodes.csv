@@ -1,0 +1,7 @@
+﻿seed,cleared_count,terminated,truncated,termination_reason,virtual_time_s,move_distance_m,detect_count,switch_count,decision_steps,strategy,target_count,cleared_rate,success
+20001,10,True,False,completed,25337.90926467512,121664.54632337563,162,145,118,random,10,1.0,1
+20002,10,True,False,completed,23267.96590079797,111204.82950398988,165,152,127,random,10,1.0,1
+20001,10,True,False,completed,8004.746870609297,35163.73435304645,162,112,112,fixed_scan,10,1.0,1
+20002,10,True,False,completed,7825.775172802318,34198.875864011556,165,111,117,fixed_scan,10,1.0,1
+20001,10,True,False,completed,8164.072039864774,35960.36019932384,162,112,112,active,10,1.0,1
+20002,10,True,False,completed,9764.964981372386,43854.82490686192,165,119,117,active,10,1.0,1

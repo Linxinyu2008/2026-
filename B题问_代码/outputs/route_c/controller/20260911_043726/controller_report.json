@@ -1,0 +1,21 @@
+{
+  "run_id": "20260911_043726",
+  "seed": 93001,
+  "requested_mode": "ppo",
+  "actual_mode": "ppo",
+  "fallback_used": false,
+  "fallback_reason": null,
+  "episode": {
+    "seed": 93001,
+    "target_count": 16,
+    "cleared_count": 16,
+    "terminated": true,
+    "truncated": false,
+    "termination_reason": "completed",
+    "virtual_time_s": 9114.578161487325,
+    "move_distance_m": 39532.89080743656,
+    "detect_count": 204,
+    "switch_count": 108,
+    "decision_steps": 162
+  }
+}

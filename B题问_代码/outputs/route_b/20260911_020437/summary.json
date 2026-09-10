@@ -1,0 +1,2527 @@
+{
+  "episodes": 1000,
+  "fixed": {
+    "episodes": 500,
+    "all_clear_rate": 1.0,
+    "mean_cleared": 12.8,
+    "mean_virtual_time_s": 7930.732293210812,
+    "median_virtual_time_s": 7918.146846861377,
+    "mean_move_distance_m": 34982.95146605404,
+    "mean_detect_count": 157.25,
+    "mean_switch_count": 83.892,
+    "mean_decision_steps": 0.0
+  },
+  "active": {
+    "episodes": 500,
+    "all_clear_rate": 1.0,
+    "mean_cleared": 12.8,
+    "mean_virtual_time_s": 7582.89402613794,
+    "median_virtual_time_s": 7593.305285425317,
+    "mean_move_distance_m": 33032.97013068968,
+    "mean_detect_count": 164.202,
+    "mean_switch_count": 91.29,
+    "mean_decision_steps": 126.718
+  },
+  "paired": {
+    "clustered:3000": {
+      "active_minus_fixed_time_s": -457.12190031110913,
+      "active_minus_fixed_move_m": -2545.60950155554,
+      "same_clear_result": true
+    },
+    "edge:3000": {
+      "active_minus_fixed_time_s": 499.84270482625834,
+      "active_minus_fixed_move_m": 2289.2135241312862,
+      "same_clear_result": true
+    },
+    "max_error:3000": {
+      "active_minus_fixed_time_s": 197.52758003441886,
+      "active_minus_fixed_move_m": 687.6379001720925,
+      "same_clear_result": true
+    },
+    "min_radius:3000": {
+      "active_minus_fixed_time_s": 222.28358957686396,
+      "active_minus_fixed_move_m": 871.4179478843216,
+      "same_clear_result": true
+    },
+    "uniform:3000": {
+      "active_minus_fixed_time_s": 203.46711770033653,
+      "active_minus_fixed_move_m": 692.3355885016717,
+      "same_clear_result": true
+    },
+    "clustered:3001": {
+      "active_minus_fixed_time_s": -106.76973550705861,
+      "active_minus_fixed_move_m": -788.8486775352976,
+      "same_clear_result": true
+    },
+    "edge:3001": {
+      "active_minus_fixed_time_s": 49.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "max_error:3001": {
+      "active_minus_fixed_time_s": -278.81202763392685,
+      "active_minus_fixed_move_m": -1584.0601381696251,
+      "same_clear_result": true
+    },
+    "min_radius:3001": {
+      "active_minus_fixed_time_s": 68.8375522673523,
+      "active_minus_fixed_move_m": 144.1877613367542,
+      "same_clear_result": true
+    },
+    "uniform:3001": {
+      "active_minus_fixed_time_s": -279.3910439737456,
+      "active_minus_fixed_move_m": -1586.955219868716,
+      "same_clear_result": true
+    },
+    "clustered:3002": {
+      "active_minus_fixed_time_s": -456.9795540924388,
+      "active_minus_fixed_move_m": -2574.897770462183,
+      "same_clear_result": true
+    },
+    "edge:3002": {
+      "active_minus_fixed_time_s": 195.8509587066901,
+      "active_minus_fixed_move_m": 774.2547935334478,
+      "same_clear_result": true
+    },
+    "max_error:3002": {
+      "active_minus_fixed_time_s": 53.730489634368496,
+      "active_minus_fixed_move_m": 103.65244817184066,
+      "same_clear_result": true
+    },
+    "min_radius:3002": {
+      "active_minus_fixed_time_s": -30.732589251512763,
+      "active_minus_fixed_move_m": -303.66294625755836,
+      "same_clear_result": true
+    },
+    "uniform:3002": {
+      "active_minus_fixed_time_s": 54.28332581599534,
+      "active_minus_fixed_move_m": 106.41662907998398,
+      "same_clear_result": true
+    },
+    "clustered:3003": {
+      "active_minus_fixed_time_s": -1493.8596579601262,
+      "active_minus_fixed_move_m": -7689.298289800616,
+      "same_clear_result": true
+    },
+    "edge:3003": {
+      "active_minus_fixed_time_s": -312.6291163101696,
+      "active_minus_fixed_move_m": -1863.1455815508452,
+      "same_clear_result": true
+    },
+    "max_error:3003": {
+      "active_minus_fixed_time_s": -70.69683493376488,
+      "active_minus_fixed_move_m": -673.484174668818,
+      "same_clear_result": true
+    },
+    "min_radius:3003": {
+      "active_minus_fixed_time_s": -89.57658189196081,
+      "active_minus_fixed_move_m": -682.8829094597895,
+      "same_clear_result": true
+    },
+    "uniform:3003": {
+      "active_minus_fixed_time_s": -70.52012679312975,
+      "active_minus_fixed_move_m": -672.6006339656451,
+      "same_clear_result": true
+    },
+    "clustered:3004": {
+      "active_minus_fixed_time_s": -966.0556114398132,
+      "active_minus_fixed_move_m": -5015.278057199055,
+      "same_clear_result": true
+    },
+    "edge:3004": {
+      "active_minus_fixed_time_s": -6.286251883714613,
+      "active_minus_fixed_move_m": -286.4312594185758,
+      "same_clear_result": true
+    },
+    "max_error:3004": {
+      "active_minus_fixed_time_s": -194.79254328946354,
+      "active_minus_fixed_move_m": -1168.9627164473131,
+      "same_clear_result": true
+    },
+    "min_radius:3004": {
+      "active_minus_fixed_time_s": -97.47876945349799,
+      "active_minus_fixed_move_m": -682.3938472674854,
+      "same_clear_result": true
+    },
+    "uniform:3004": {
+      "active_minus_fixed_time_s": -201.77829539719733,
+      "active_minus_fixed_move_m": -1203.891476985984,
+      "same_clear_result": true
+    },
+    "clustered:3005": {
+      "active_minus_fixed_time_s": -1152.7024727945154,
+      "active_minus_fixed_move_m": -6103.512363972561,
+      "same_clear_result": true
+    },
+    "edge:3005": {
+      "active_minus_fixed_time_s": -347.1033322584608,
+      "active_minus_fixed_move_m": -2075.516661292306,
+      "same_clear_result": true
+    },
+    "max_error:3005": {
+      "active_minus_fixed_time_s": -380.3261498844531,
+      "active_minus_fixed_move_m": -2196.6307494222783,
+      "same_clear_result": true
+    },
+    "min_radius:3005": {
+      "active_minus_fixed_time_s": -128.93498942317729,
+      "active_minus_fixed_move_m": -874.6749471158837,
+      "same_clear_result": true
+    },
+    "uniform:3005": {
+      "active_minus_fixed_time_s": -389.078321926183,
+      "active_minus_fixed_move_m": -2240.3916096309404,
+      "same_clear_result": true
+    },
+    "clustered:3006": {
+      "active_minus_fixed_time_s": -1386.614012816728,
+      "active_minus_fixed_move_m": -7283.070064083615,
+      "same_clear_result": true
+    },
+    "edge:3006": {
+      "active_minus_fixed_time_s": -1137.965925354505,
+      "active_minus_fixed_move_m": -5994.829626772531,
+      "same_clear_result": true
+    },
+    "max_error:3006": {
+      "active_minus_fixed_time_s": -38.41826875150218,
+      "active_minus_fixed_move_m": -417.09134375751455,
+      "same_clear_result": true
+    },
+    "min_radius:3006": {
+      "active_minus_fixed_time_s": 147.2713497035602,
+      "active_minus_fixed_move_m": 606.3567485177919,
+      "same_clear_result": true
+    },
+    "uniform:3006": {
+      "active_minus_fixed_time_s": -38.75640972368274,
+      "active_minus_fixed_move_m": -418.7820486184137,
+      "same_clear_result": true
+    },
+    "clustered:3007": {
+      "active_minus_fixed_time_s": -1361.5386119779068,
+      "active_minus_fixed_move_m": -7147.693059889498,
+      "same_clear_result": true
+    },
+    "edge:3007": {
+      "active_minus_fixed_time_s": -805.3646100887263,
+      "active_minus_fixed_move_m": -4231.823050443629,
+      "same_clear_result": true
+    },
+    "max_error:3007": {
+      "active_minus_fixed_time_s": -572.2240801621592,
+      "active_minus_fixed_move_m": -3146.1204008108107,
+      "same_clear_result": true
+    },
+    "min_radius:3007": {
+      "active_minus_fixed_time_s": -135.11171462757375,
+      "active_minus_fixed_move_m": -955.5585731378596,
+      "same_clear_result": true
+    },
+    "uniform:3007": {
+      "active_minus_fixed_time_s": -568.6376933436513,
+      "active_minus_fixed_move_m": -3128.1884667182458,
+      "same_clear_result": true
+    },
+    "clustered:3008": {
+      "active_minus_fixed_time_s": -836.292667778569,
+      "active_minus_fixed_move_m": -4411.463338892845,
+      "same_clear_result": true
+    },
+    "edge:3008": {
+      "active_minus_fixed_time_s": -130.93617425920002,
+      "active_minus_fixed_move_m": -909.6808712959973,
+      "same_clear_result": true
+    },
+    "max_error:3008": {
+      "active_minus_fixed_time_s": 52.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "min_radius:3008": {
+      "active_minus_fixed_time_s": -174.47926481230934,
+      "active_minus_fixed_move_m": -1052.3963240615485,
+      "same_clear_result": true
+    },
+    "uniform:3008": {
+      "active_minus_fixed_time_s": 51.99999999999909,
+      "active_minus_fixed_move_m": 7.275957614183426e-12,
+      "same_clear_result": true
+    },
+    "clustered:3009": {
+      "active_minus_fixed_time_s": -940.4528407040516,
+      "active_minus_fixed_move_m": -4962.264203520244,
+      "same_clear_result": true
+    },
+    "edge:3009": {
+      "active_minus_fixed_time_s": -28.53238773655812,
+      "active_minus_fixed_move_m": -407.6619386827879,
+      "same_clear_result": true
+    },
+    "max_error:3009": {
+      "active_minus_fixed_time_s": -199.7095975326465,
+      "active_minus_fixed_move_m": -1218.5479876632344,
+      "same_clear_result": true
+    },
+    "min_radius:3009": {
+      "active_minus_fixed_time_s": 21.406306523167586,
+      "active_minus_fixed_move_m": -77.96846738416207,
+      "same_clear_result": true
+    },
+    "uniform:3009": {
+      "active_minus_fixed_time_s": 26.970314702075484,
+      "active_minus_fixed_move_m": -80.14842648961712,
+      "same_clear_result": true
+    },
+    "clustered:3010": {
+      "active_minus_fixed_time_s": -1219.2089195573371,
+      "active_minus_fixed_move_m": -6386.044597786669,
+      "same_clear_result": true
+    },
+    "edge:3010": {
+      "active_minus_fixed_time_s": -967.5492632167079,
+      "active_minus_fixed_move_m": -5072.746316083518,
+      "same_clear_result": true
+    },
+    "max_error:3010": {
+      "active_minus_fixed_time_s": -591.3405500189547,
+      "active_minus_fixed_move_m": -3286.702750094766,
+      "same_clear_result": true
+    },
+    "min_radius:3010": {
+      "active_minus_fixed_time_s": -335.0079289408386,
+      "active_minus_fixed_move_m": -1905.039644704193,
+      "same_clear_result": true
+    },
+    "uniform:3010": {
+      "active_minus_fixed_time_s": -595.1610901660933,
+      "active_minus_fixed_move_m": -3305.8054508304413,
+      "same_clear_result": true
+    },
+    "clustered:3011": {
+      "active_minus_fixed_time_s": -905.5445983376949,
+      "active_minus_fixed_move_m": -4777.72299168845,
+      "same_clear_result": true
+    },
+    "edge:3011": {
+      "active_minus_fixed_time_s": 112.32056507447669,
+      "active_minus_fixed_move_m": 356.602825372378,
+      "same_clear_result": true
+    },
+    "max_error:3011": {
+      "active_minus_fixed_time_s": 417.567251263461,
+      "active_minus_fixed_move_m": 1962.8362563173068,
+      "same_clear_result": true
+    },
+    "min_radius:3011": {
+      "active_minus_fixed_time_s": 121.33975647713396,
+      "active_minus_fixed_move_m": 456.69878238567253,
+      "same_clear_result": true
+    },
+    "uniform:3011": {
+      "active_minus_fixed_time_s": 427.9562949181336,
+      "active_minus_fixed_move_m": 2014.7814745906762,
+      "same_clear_result": true
+    },
+    "clustered:3012": {
+      "active_minus_fixed_time_s": -819.5180020216512,
+      "active_minus_fixed_move_m": -4337.590010108241,
+      "same_clear_result": true
+    },
+    "edge:3012": {
+      "active_minus_fixed_time_s": -217.73145046284844,
+      "active_minus_fixed_move_m": -1183.657252314224,
+      "same_clear_result": true
+    },
+    "max_error:3012": {
+      "active_minus_fixed_time_s": 120.42113735644216,
+      "active_minus_fixed_move_m": 512.1056867822044,
+      "same_clear_result": true
+    },
+    "min_radius:3012": {
+      "active_minus_fixed_time_s": -179.02278805189235,
+      "active_minus_fixed_move_m": -1085.1139402594563,
+      "same_clear_result": true
+    },
+    "uniform:3012": {
+      "active_minus_fixed_time_s": 115.04859282611596,
+      "active_minus_fixed_move_m": 510.2429641305789,
+      "same_clear_result": true
+    },
+    "clustered:3013": {
+      "active_minus_fixed_time_s": -2169.510687819561,
+      "active_minus_fixed_move_m": -11212.553439097777,
+      "same_clear_result": true
+    },
+    "edge:3013": {
+      "active_minus_fixed_time_s": -67.99639285845296,
+      "active_minus_fixed_move_m": -454.98196429225936,
+      "same_clear_result": true
+    },
+    "max_error:3013": {
+      "active_minus_fixed_time_s": -323.6743525946713,
+      "active_minus_fixed_move_m": -1938.371762973351,
+      "same_clear_result": true
+    },
+    "min_radius:3013": {
+      "active_minus_fixed_time_s": -636.4994316029042,
+      "active_minus_fixed_move_m": -3502.4971580145066,
+      "same_clear_result": true
+    },
+    "uniform:3013": {
+      "active_minus_fixed_time_s": -283.1968248297562,
+      "active_minus_fixed_move_m": -1740.9841241487593,
+      "same_clear_result": true
+    },
+    "clustered:3014": {
+      "active_minus_fixed_time_s": -843.6141783238445,
+      "active_minus_fixed_move_m": -4473.070891619223,
+      "same_clear_result": true
+    },
+    "edge:3014": {
+      "active_minus_fixed_time_s": -327.9015168893866,
+      "active_minus_fixed_move_m": -1769.507584446932,
+      "same_clear_result": true
+    },
+    "max_error:3014": {
+      "active_minus_fixed_time_s": -326.4785923497475,
+      "active_minus_fixed_move_m": -1812.3929617487374,
+      "same_clear_result": true
+    },
+    "min_radius:3014": {
+      "active_minus_fixed_time_s": 36.243553935347336,
+      "active_minus_fixed_move_m": -23.782230323267868,
+      "same_clear_result": true
+    },
+    "uniform:3014": {
+      "active_minus_fixed_time_s": -336.4789561713851,
+      "active_minus_fixed_move_m": -1812.394780856932,
+      "same_clear_result": true
+    },
+    "clustered:3015": {
+      "active_minus_fixed_time_s": -1087.6124357885874,
+      "active_minus_fixed_move_m": -5648.062178942921,
+      "same_clear_result": true
+    },
+    "edge:3015": {
+      "active_minus_fixed_time_s": 120.19160949854995,
+      "active_minus_fixed_move_m": 315.95804749274976,
+      "same_clear_result": true
+    },
+    "max_error:3015": {
+      "active_minus_fixed_time_s": 2.4491251891231514,
+      "active_minus_fixed_move_m": -182.75437405439152,
+      "same_clear_result": true
+    },
+    "min_radius:3015": {
+      "active_minus_fixed_time_s": -22.34564103885168,
+      "active_minus_fixed_move_m": -366.7282051942602,
+      "same_clear_result": true
+    },
+    "uniform:3015": {
+      "active_minus_fixed_time_s": 2.904728212608461,
+      "active_minus_fixed_move_m": -180.47635893695406,
+      "same_clear_result": true
+    },
+    "clustered:3016": {
+      "active_minus_fixed_time_s": -848.4946341768973,
+      "active_minus_fixed_move_m": -4512.473170884477,
+      "same_clear_result": true
+    },
+    "edge:3016": {
+      "active_minus_fixed_time_s": -47.346291232230215,
+      "active_minus_fixed_move_m": -561.7314561611493,
+      "same_clear_result": true
+    },
+    "max_error:3016": {
+      "active_minus_fixed_time_s": -651.3666731779722,
+      "active_minus_fixed_move_m": -3471.8333658898628,
+      "same_clear_result": true
+    },
+    "min_radius:3016": {
+      "active_minus_fixed_time_s": -295.25170256662204,
+      "active_minus_fixed_move_m": -1806.2585128331193,
+      "same_clear_result": true
+    },
+    "uniform:3016": {
+      "active_minus_fixed_time_s": -648.6130211330328,
+      "active_minus_fixed_move_m": -3433.065105665155,
+      "same_clear_result": true
+    },
+    "clustered:3017": {
+      "active_minus_fixed_time_s": -805.0129505583272,
+      "active_minus_fixed_move_m": -4305.064752791615,
+      "same_clear_result": true
+    },
+    "edge:3017": {
+      "active_minus_fixed_time_s": -284.5952418955185,
+      "active_minus_fixed_move_m": -1732.9762094775942,
+      "same_clear_result": true
+    },
+    "max_error:3017": {
+      "active_minus_fixed_time_s": -286.8565652484376,
+      "active_minus_fixed_move_m": -1694.28282624219,
+      "same_clear_result": true
+    },
+    "min_radius:3017": {
+      "active_minus_fixed_time_s": -24.922806601472985,
+      "active_minus_fixed_move_m": -409.6140330073613,
+      "same_clear_result": true
+    },
+    "uniform:3017": {
+      "active_minus_fixed_time_s": -282.30563275272834,
+      "active_minus_fixed_move_m": -1671.5281637636363,
+      "same_clear_result": true
+    },
+    "clustered:3018": {
+      "active_minus_fixed_time_s": -1771.1206595389112,
+      "active_minus_fixed_move_m": -9115.603297694543,
+      "same_clear_result": true
+    },
+    "edge:3018": {
+      "active_minus_fixed_time_s": 428.9352940292574,
+      "active_minus_fixed_move_m": 2004.676470146278,
+      "same_clear_result": true
+    },
+    "max_error:3018": {
+      "active_minus_fixed_time_s": -787.8122387609528,
+      "active_minus_fixed_move_m": -4064.0611938047587,
+      "same_clear_result": true
+    },
+    "min_radius:3018": {
+      "active_minus_fixed_time_s": -189.7626808276591,
+      "active_minus_fixed_move_m": -1113.8134041382946,
+      "same_clear_result": true
+    },
+    "uniform:3018": {
+      "active_minus_fixed_time_s": -774.6953771099643,
+      "active_minus_fixed_move_m": -3998.476885549808,
+      "same_clear_result": true
+    },
+    "clustered:3019": {
+      "active_minus_fixed_time_s": -1154.4297212945667,
+      "active_minus_fixed_move_m": -5967.14860647282,
+      "same_clear_result": true
+    },
+    "edge:3019": {
+      "active_minus_fixed_time_s": 36.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "max_error:3019": {
+      "active_minus_fixed_time_s": 3.6479402607674274,
+      "active_minus_fixed_move_m": -286.7602986961647,
+      "same_clear_result": true
+    },
+    "min_radius:3019": {
+      "active_minus_fixed_time_s": -194.25473021326889,
+      "active_minus_fixed_move_m": -1261.2736510663417,
+      "same_clear_result": true
+    },
+    "uniform:3019": {
+      "active_minus_fixed_time_s": -1.6029852055416995,
+      "active_minus_fixed_move_m": -288.01492602770304,
+      "same_clear_result": true
+    },
+    "clustered:3020": {
+      "active_minus_fixed_time_s": -221.77540636821323,
+      "active_minus_fixed_move_m": -1383.8770318410607,
+      "same_clear_result": true
+    },
+    "edge:3020": {
+      "active_minus_fixed_time_s": -104.36041455368559,
+      "active_minus_fixed_move_m": -751.8020727684343,
+      "same_clear_result": true
+    },
+    "max_error:3020": {
+      "active_minus_fixed_time_s": -7.600124755802426,
+      "active_minus_fixed_move_m": -188.00062377902213,
+      "same_clear_result": true
+    },
+    "min_radius:3020": {
+      "active_minus_fixed_time_s": 29.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3020": {
+      "active_minus_fixed_time_s": -11.21133390020077,
+      "active_minus_fixed_move_m": -206.05666950100567,
+      "same_clear_result": true
+    },
+    "clustered:3021": {
+      "active_minus_fixed_time_s": -618.3102621550879,
+      "active_minus_fixed_move_m": -3346.5513107754086,
+      "same_clear_result": true
+    },
+    "edge:3021": {
+      "active_minus_fixed_time_s": -64.07720202951168,
+      "active_minus_fixed_move_m": -560.3860101475657,
+      "same_clear_result": true
+    },
+    "max_error:3021": {
+      "active_minus_fixed_time_s": -157.88483253283994,
+      "active_minus_fixed_move_m": -1124.4241626642033,
+      "same_clear_result": true
+    },
+    "min_radius:3021": {
+      "active_minus_fixed_time_s": 24.20453655777237,
+      "active_minus_fixed_move_m": -138.97731721113087,
+      "same_clear_result": true
+    },
+    "uniform:3021": {
+      "active_minus_fixed_time_s": -150.32591503232106,
+      "active_minus_fixed_move_m": -1111.6295751616126,
+      "same_clear_result": true
+    },
+    "clustered:3022": {
+      "active_minus_fixed_time_s": -976.799709611837,
+      "active_minus_fixed_move_m": -5118.998548059171,
+      "same_clear_result": true
+    },
+    "edge:3022": {
+      "active_minus_fixed_time_s": -350.5851136755773,
+      "active_minus_fixed_move_m": -1977.9255683778756,
+      "same_clear_result": true
+    },
+    "max_error:3022": {
+      "active_minus_fixed_time_s": 39.4628902307777,
+      "active_minus_fixed_move_m": -52.685548846115125,
+      "same_clear_result": true
+    },
+    "min_radius:3022": {
+      "active_minus_fixed_time_s": -269.31687773263275,
+      "active_minus_fixed_move_m": -1546.5843886631556,
+      "same_clear_result": true
+    },
+    "uniform:3022": {
+      "active_minus_fixed_time_s": 38.704956454888816,
+      "active_minus_fixed_move_m": -56.47521772556502,
+      "same_clear_result": true
+    },
+    "clustered:3023": {
+      "active_minus_fixed_time_s": -811.0980577448909,
+      "active_minus_fixed_move_m": -4360.49028872445,
+      "same_clear_result": true
+    },
+    "edge:3023": {
+      "active_minus_fixed_time_s": 207.00869901038095,
+      "active_minus_fixed_move_m": 790.0434950519048,
+      "same_clear_result": true
+    },
+    "max_error:3023": {
+      "active_minus_fixed_time_s": 53.217521874174054,
+      "active_minus_fixed_move_m": -8.912390629135189,
+      "same_clear_result": true
+    },
+    "min_radius:3023": {
+      "active_minus_fixed_time_s": 53.0,
+      "active_minus_fixed_move_m": 7.275957614183426e-12,
+      "same_clear_result": true
+    },
+    "uniform:3023": {
+      "active_minus_fixed_time_s": 48.856609758388004,
+      "active_minus_fixed_move_m": -5.7169512080654385,
+      "same_clear_result": true
+    },
+    "clustered:3024": {
+      "active_minus_fixed_time_s": -914.7018571351382,
+      "active_minus_fixed_move_m": -4873.509285675675,
+      "same_clear_result": true
+    },
+    "edge:3024": {
+      "active_minus_fixed_time_s": 503.023612758564,
+      "active_minus_fixed_move_m": 2315.1180637928264,
+      "same_clear_result": true
+    },
+    "max_error:3024": {
+      "active_minus_fixed_time_s": -251.15462897984798,
+      "active_minus_fixed_move_m": -1485.7731448992272,
+      "same_clear_result": true
+    },
+    "min_radius:3024": {
+      "active_minus_fixed_time_s": -209.49119941378376,
+      "active_minus_fixed_move_m": -1252.4559970689115,
+      "same_clear_result": true
+    },
+    "uniform:3024": {
+      "active_minus_fixed_time_s": -252.4239166189418,
+      "active_minus_fixed_move_m": -1492.1195830947036,
+      "same_clear_result": true
+    },
+    "clustered:3025": {
+      "active_minus_fixed_time_s": -523.0443691915461,
+      "active_minus_fixed_move_m": -2790.2218459577343,
+      "same_clear_result": true
+    },
+    "edge:3025": {
+      "active_minus_fixed_time_s": -284.68602574153647,
+      "active_minus_fixed_move_m": -1558.4301287076778,
+      "same_clear_result": true
+    },
+    "max_error:3025": {
+      "active_minus_fixed_time_s": -385.2471218315595,
+      "active_minus_fixed_move_m": -2106.2356091578004,
+      "same_clear_result": true
+    },
+    "min_radius:3025": {
+      "active_minus_fixed_time_s": -191.78615645028003,
+      "active_minus_fixed_move_m": -1113.9307822513983,
+      "same_clear_result": true
+    },
+    "uniform:3025": {
+      "active_minus_fixed_time_s": -387.71017146087706,
+      "active_minus_fixed_move_m": -2093.5508573043917,
+      "same_clear_result": true
+    },
+    "clustered:3026": {
+      "active_minus_fixed_time_s": -1426.3657586488134,
+      "active_minus_fixed_move_m": -7456.828793244051,
+      "same_clear_result": true
+    },
+    "edge:3026": {
+      "active_minus_fixed_time_s": 129.48588054658103,
+      "active_minus_fixed_move_m": 362.4294027329015,
+      "same_clear_result": true
+    },
+    "max_error:3026": {
+      "active_minus_fixed_time_s": -219.69936028998745,
+      "active_minus_fixed_move_m": -1333.4968014499318,
+      "same_clear_result": true
+    },
+    "min_radius:3026": {
+      "active_minus_fixed_time_s": -230.4627196967349,
+      "active_minus_fixed_move_m": -1312.3135984836772,
+      "same_clear_result": true
+    },
+    "uniform:3026": {
+      "active_minus_fixed_time_s": -218.86707009069687,
+      "active_minus_fixed_move_m": -1329.335350453497,
+      "same_clear_result": true
+    },
+    "clustered:3027": {
+      "active_minus_fixed_time_s": -312.76215315137415,
+      "active_minus_fixed_move_m": -1793.8107657568762,
+      "same_clear_result": true
+    },
+    "edge:3027": {
+      "active_minus_fixed_time_s": -138.14908788740104,
+      "active_minus_fixed_move_m": -890.7454394370034,
+      "same_clear_result": true
+    },
+    "max_error:3027": {
+      "active_minus_fixed_time_s": 388.8026284258358,
+      "active_minus_fixed_move_m": 1774.0131421291771,
+      "same_clear_result": true
+    },
+    "min_radius:3027": {
+      "active_minus_fixed_time_s": 371.92236988166223,
+      "active_minus_fixed_move_m": 1684.6118494083094,
+      "same_clear_result": true
+    },
+    "uniform:3027": {
+      "active_minus_fixed_time_s": 383.99136668025767,
+      "active_minus_fixed_move_m": 1774.9568334012765,
+      "same_clear_result": true
+    },
+    "clustered:3028": {
+      "active_minus_fixed_time_s": -753.2924566453776,
+      "active_minus_fixed_move_m": -4011.4622832268724,
+      "same_clear_result": true
+    },
+    "edge:3028": {
+      "active_minus_fixed_time_s": -1398.4173993082059,
+      "active_minus_fixed_move_m": -7287.086996541024,
+      "same_clear_result": true
+    },
+    "max_error:3028": {
+      "active_minus_fixed_time_s": -418.7948933873995,
+      "active_minus_fixed_move_m": -2303.9744669369975,
+      "same_clear_result": true
+    },
+    "min_radius:3028": {
+      "active_minus_fixed_time_s": -163.53396230819635,
+      "active_minus_fixed_move_m": -1032.6698115409745,
+      "same_clear_result": true
+    },
+    "uniform:3028": {
+      "active_minus_fixed_time_s": -415.75449999604825,
+      "active_minus_fixed_move_m": -2288.7724999802304,
+      "same_clear_result": true
+    },
+    "clustered:3029": {
+      "active_minus_fixed_time_s": -1307.723487005882,
+      "active_minus_fixed_move_m": -6843.617435029391,
+      "same_clear_result": true
+    },
+    "edge:3029": {
+      "active_minus_fixed_time_s": -266.590272260918,
+      "active_minus_fixed_move_m": -1522.9513613046001,
+      "same_clear_result": true
+    },
+    "max_error:3029": {
+      "active_minus_fixed_time_s": -47.56342373094594,
+      "active_minus_fixed_move_m": -527.8171186547261,
+      "same_clear_result": true
+    },
+    "min_radius:3029": {
+      "active_minus_fixed_time_s": -15.980821718237166,
+      "active_minus_fixed_move_m": -339.90410859118856,
+      "same_clear_result": true
+    },
+    "uniform:3029": {
+      "active_minus_fixed_time_s": -38.69026075754664,
+      "active_minus_fixed_move_m": -508.45130378771864,
+      "same_clear_result": true
+    },
+    "clustered:3030": {
+      "active_minus_fixed_time_s": -1008.4031921144906,
+      "active_minus_fixed_move_m": -5227.015960572433,
+      "same_clear_result": true
+    },
+    "edge:3030": {
+      "active_minus_fixed_time_s": -7.001080535035726,
+      "active_minus_fixed_move_m": -240.00540267517863,
+      "same_clear_result": true
+    },
+    "max_error:3030": {
+      "active_minus_fixed_time_s": -112.2298185593445,
+      "active_minus_fixed_move_m": -736.1490927967243,
+      "same_clear_result": true
+    },
+    "min_radius:3030": {
+      "active_minus_fixed_time_s": -0.060987925918198016,
+      "active_minus_fixed_move_m": -175.30493962959008,
+      "same_clear_result": true
+    },
+    "uniform:3030": {
+      "active_minus_fixed_time_s": -112.09689818172228,
+      "active_minus_fixed_move_m": -735.4844909086096,
+      "same_clear_result": true
+    },
+    "clustered:3031": {
+      "active_minus_fixed_time_s": -770.7033290391264,
+      "active_minus_fixed_move_m": -4163.516645195639,
+      "same_clear_result": true
+    },
+    "edge:3031": {
+      "active_minus_fixed_time_s": -651.3732326558893,
+      "active_minus_fixed_move_m": -3426.866163279439,
+      "same_clear_result": true
+    },
+    "max_error:3031": {
+      "active_minus_fixed_time_s": -739.0136564645363,
+      "active_minus_fixed_move_m": -3935.0682823226743,
+      "same_clear_result": true
+    },
+    "min_radius:3031": {
+      "active_minus_fixed_time_s": -176.32308427142743,
+      "active_minus_fixed_move_m": -1086.6154213571426,
+      "same_clear_result": true
+    },
+    "uniform:3031": {
+      "active_minus_fixed_time_s": -722.0805903748969,
+      "active_minus_fixed_move_m": -3815.4029518744937,
+      "same_clear_result": true
+    },
+    "clustered:3032": {
+      "active_minus_fixed_time_s": -698.1840876848619,
+      "active_minus_fixed_move_m": -3615.9204384243094,
+      "same_clear_result": true
+    },
+    "edge:3032": {
+      "active_minus_fixed_time_s": 24.88746139869454,
+      "active_minus_fixed_move_m": -85.56269300652639,
+      "same_clear_result": true
+    },
+    "max_error:3032": {
+      "active_minus_fixed_time_s": 7.703727399215495,
+      "active_minus_fixed_move_m": -171.4813630039207,
+      "same_clear_result": true
+    },
+    "min_radius:3032": {
+      "active_minus_fixed_time_s": 26.977666065763515,
+      "active_minus_fixed_move_m": -50.111669671186974,
+      "same_clear_result": true
+    },
+    "uniform:3032": {
+      "active_minus_fixed_time_s": 5.179775546420387,
+      "active_minus_fixed_move_m": -184.10112226789352,
+      "same_clear_result": true
+    },
+    "clustered:3033": {
+      "active_minus_fixed_time_s": -3502.698646871445,
+      "active_minus_fixed_move_m": -17063.4932343572,
+      "same_clear_result": true
+    },
+    "edge:3033": {
+      "active_minus_fixed_time_s": -16.037899560848018,
+      "active_minus_fixed_move_m": -250.1894978042401,
+      "same_clear_result": true
+    },
+    "max_error:3033": {
+      "active_minus_fixed_time_s": -1206.9663974295454,
+      "active_minus_fixed_move_m": -6119.831987147729,
+      "same_clear_result": true
+    },
+    "min_radius:3033": {
+      "active_minus_fixed_time_s": -438.7201004615508,
+      "active_minus_fixed_move_m": -2433.600502307745,
+      "same_clear_result": true
+    },
+    "uniform:3033": {
+      "active_minus_fixed_time_s": -1209.2027905542873,
+      "active_minus_fixed_move_m": -6131.013952771456,
+      "same_clear_result": true
+    },
+    "clustered:3034": {
+      "active_minus_fixed_time_s": -1243.844997976461,
+      "active_minus_fixed_move_m": -6469.2249898823065,
+      "same_clear_result": true
+    },
+    "edge:3034": {
+      "active_minus_fixed_time_s": -550.1394736571337,
+      "active_minus_fixed_move_m": -2935.697368285655,
+      "same_clear_result": true
+    },
+    "max_error:3034": {
+      "active_minus_fixed_time_s": -753.0100782826557,
+      "active_minus_fixed_move_m": -3900.050391413257,
+      "same_clear_result": true
+    },
+    "min_radius:3034": {
+      "active_minus_fixed_time_s": 51.5258384126455,
+      "active_minus_fixed_move_m": -17.370807936771598,
+      "same_clear_result": true
+    },
+    "uniform:3034": {
+      "active_minus_fixed_time_s": -752.3457197917623,
+      "active_minus_fixed_move_m": -3896.728598958798,
+      "same_clear_result": true
+    },
+    "clustered:3035": {
+      "active_minus_fixed_time_s": -759.2272485326057,
+      "active_minus_fixed_move_m": -4011.1362426630294,
+      "same_clear_result": true
+    },
+    "edge:3035": {
+      "active_minus_fixed_time_s": -9.415314517533261,
+      "active_minus_fixed_move_m": -257.0765725876845,
+      "same_clear_result": true
+    },
+    "max_error:3035": {
+      "active_minus_fixed_time_s": 50.00000000000182,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "min_radius:3035": {
+      "active_minus_fixed_time_s": -29.472612337458486,
+      "active_minus_fixed_move_m": -347.3630616872979,
+      "same_clear_result": true
+    },
+    "uniform:3035": {
+      "active_minus_fixed_time_s": 45.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "clustered:3036": {
+      "active_minus_fixed_time_s": -1019.2989614876487,
+      "active_minus_fixed_move_m": -5501.494807438223,
+      "same_clear_result": true
+    },
+    "edge:3036": {
+      "active_minus_fixed_time_s": -610.9818862374232,
+      "active_minus_fixed_move_m": -3334.909431187123,
+      "same_clear_result": true
+    },
+    "max_error:3036": {
+      "active_minus_fixed_time_s": -60.043806355990455,
+      "active_minus_fixed_move_m": -465.2190317799541,
+      "same_clear_result": true
+    },
+    "min_radius:3036": {
+      "active_minus_fixed_time_s": -298.47439834648503,
+      "active_minus_fixed_move_m": -1732.3719917324197,
+      "same_clear_result": true
+    },
+    "uniform:3036": {
+      "active_minus_fixed_time_s": -60.64054201394538,
+      "active_minus_fixed_move_m": -468.20271006972325,
+      "same_clear_result": true
+    },
+    "clustered:3037": {
+      "active_minus_fixed_time_s": -713.3263781550413,
+      "active_minus_fixed_move_m": -3901.6318907751775,
+      "same_clear_result": true
+    },
+    "edge:3037": {
+      "active_minus_fixed_time_s": 505.71633505366117,
+      "active_minus_fixed_move_m": 2273.5816752683168,
+      "same_clear_result": true
+    },
+    "max_error:3037": {
+      "active_minus_fixed_time_s": -522.9036467320275,
+      "active_minus_fixed_move_m": -2949.518233660121,
+      "same_clear_result": true
+    },
+    "min_radius:3037": {
+      "active_minus_fixed_time_s": 67.51395737009807,
+      "active_minus_fixed_move_m": 12.569786850486707,
+      "same_clear_result": true
+    },
+    "uniform:3037": {
+      "active_minus_fixed_time_s": -522.3752871606266,
+      "active_minus_fixed_move_m": -2921.876435803126,
+      "same_clear_result": true
+    },
+    "clustered:3038": {
+      "active_minus_fixed_time_s": -862.4991112255175,
+      "active_minus_fixed_move_m": -4517.495556127589,
+      "same_clear_result": true
+    },
+    "edge:3038": {
+      "active_minus_fixed_time_s": 39.0,
+      "active_minus_fixed_move_m": 3.637978807091713e-12,
+      "same_clear_result": true
+    },
+    "max_error:3038": {
+      "active_minus_fixed_time_s": 30.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "min_radius:3038": {
+      "active_minus_fixed_time_s": 49.00000000000091,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3038": {
+      "active_minus_fixed_time_s": 30.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "clustered:3039": {
+      "active_minus_fixed_time_s": -670.0608994338545,
+      "active_minus_fixed_move_m": -3585.3044971692652,
+      "same_clear_result": true
+    },
+    "edge:3039": {
+      "active_minus_fixed_time_s": 4.710975674525798,
+      "active_minus_fixed_move_m": -21.4451216273701,
+      "same_clear_result": true
+    },
+    "max_error:3039": {
+      "active_minus_fixed_time_s": -125.08996852353357,
+      "active_minus_fixed_move_m": -850.4498426176651,
+      "same_clear_result": true
+    },
+    "min_radius:3039": {
+      "active_minus_fixed_time_s": 20.58098685514142,
+      "active_minus_fixed_move_m": -72.09506572429382,
+      "same_clear_result": true
+    },
+    "uniform:3039": {
+      "active_minus_fixed_time_s": -135.1277822732236,
+      "active_minus_fixed_move_m": -850.6389113661135,
+      "same_clear_result": true
+    },
+    "clustered:3040": {
+      "active_minus_fixed_time_s": -1147.4872737776122,
+      "active_minus_fixed_move_m": -6057.436368888015,
+      "same_clear_result": true
+    },
+    "edge:3040": {
+      "active_minus_fixed_time_s": -168.03722250850842,
+      "active_minus_fixed_move_m": -1110.186112542542,
+      "same_clear_result": true
+    },
+    "max_error:3040": {
+      "active_minus_fixed_time_s": -369.5822393366416,
+      "active_minus_fixed_move_m": -2067.911196683206,
+      "same_clear_result": true
+    },
+    "min_radius:3040": {
+      "active_minus_fixed_time_s": -29.431792195071466,
+      "active_minus_fixed_move_m": -457.15896097535733,
+      "same_clear_result": true
+    },
+    "uniform:3040": {
+      "active_minus_fixed_time_s": -385.32496569549767,
+      "active_minus_fixed_move_m": -2146.6248284774774,
+      "same_clear_result": true
+    },
+    "clustered:3041": {
+      "active_minus_fixed_time_s": -838.028938955521,
+      "active_minus_fixed_move_m": -4375.144694777602,
+      "same_clear_result": true
+    },
+    "edge:3041": {
+      "active_minus_fixed_time_s": -160.70898950669834,
+      "active_minus_fixed_move_m": -1008.5449475334935,
+      "same_clear_result": true
+    },
+    "max_error:3041": {
+      "active_minus_fixed_time_s": -246.64281112429944,
+      "active_minus_fixed_move_m": -1388.2140556214908,
+      "same_clear_result": true
+    },
+    "min_radius:3041": {
+      "active_minus_fixed_time_s": 35.99999999999909,
+      "active_minus_fixed_move_m": -3.637978807091713e-12,
+      "same_clear_result": true
+    },
+    "uniform:3041": {
+      "active_minus_fixed_time_s": -248.49819813186514,
+      "active_minus_fixed_move_m": -1397.4909906593166,
+      "same_clear_result": true
+    },
+    "clustered:3042": {
+      "active_minus_fixed_time_s": -585.4504960868044,
+      "active_minus_fixed_move_m": -3142.2524804340173,
+      "same_clear_result": true
+    },
+    "edge:3042": {
+      "active_minus_fixed_time_s": -78.30653245760277,
+      "active_minus_fixed_move_m": -636.5326622880093,
+      "same_clear_result": true
+    },
+    "max_error:3042": {
+      "active_minus_fixed_time_s": 50.77405837296374,
+      "active_minus_fixed_move_m": -1.1297081351804081,
+      "same_clear_result": true
+    },
+    "min_radius:3042": {
+      "active_minus_fixed_time_s": 297.6875405932906,
+      "active_minus_fixed_move_m": 1243.4377029664392,
+      "same_clear_result": true
+    },
+    "uniform:3042": {
+      "active_minus_fixed_time_s": 45.76749911463139,
+      "active_minus_fixed_move_m": -1.1625044268366764,
+      "same_clear_result": true
+    },
+    "clustered:3043": {
+      "active_minus_fixed_time_s": -1202.3470731888901,
+      "active_minus_fixed_move_m": -6306.735365944431,
+      "same_clear_result": true
+    },
+    "edge:3043": {
+      "active_minus_fixed_time_s": 34.5066312941708,
+      "active_minus_fixed_move_m": -17.466843529160542,
+      "same_clear_result": true
+    },
+    "max_error:3043": {
+      "active_minus_fixed_time_s": -678.0855218057495,
+      "active_minus_fixed_move_m": -3630.4276090287312,
+      "same_clear_result": true
+    },
+    "min_radius:3043": {
+      "active_minus_fixed_time_s": 32.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3043": {
+      "active_minus_fixed_time_s": -681.2431819993017,
+      "active_minus_fixed_move_m": -3646.2159099964992,
+      "same_clear_result": true
+    },
+    "clustered:3044": {
+      "active_minus_fixed_time_s": -1239.8622003072487,
+      "active_minus_fixed_move_m": -6499.311001536222,
+      "same_clear_result": true
+    },
+    "edge:3044": {
+      "active_minus_fixed_time_s": 39.12135886796659,
+      "active_minus_fixed_move_m": -4.3932056601697695,
+      "same_clear_result": true
+    },
+    "max_error:3044": {
+      "active_minus_fixed_time_s": -53.740234829778274,
+      "active_minus_fixed_move_m": -423.7011741488968,
+      "same_clear_result": true
+    },
+    "min_radius:3044": {
+      "active_minus_fixed_time_s": 32.20092290745015,
+      "active_minus_fixed_move_m": -73.99538546275289,
+      "same_clear_result": true
+    },
+    "uniform:3044": {
+      "active_minus_fixed_time_s": -48.37394199201481,
+      "active_minus_fixed_move_m": -396.869709960054,
+      "same_clear_result": true
+    },
+    "clustered:3045": {
+      "active_minus_fixed_time_s": -571.334266699123,
+      "active_minus_fixed_move_m": -3106.671333495604,
+      "same_clear_result": true
+    },
+    "edge:3045": {
+      "active_minus_fixed_time_s": -205.31117194735816,
+      "active_minus_fixed_move_m": -1201.5558597367926,
+      "same_clear_result": true
+    },
+    "max_error:3045": {
+      "active_minus_fixed_time_s": -21.15824885247821,
+      "active_minus_fixed_move_m": -370.79124426239287,
+      "same_clear_result": true
+    },
+    "min_radius:3045": {
+      "active_minus_fixed_time_s": -477.1561431655582,
+      "active_minus_fixed_move_m": -2615.78071582779,
+      "same_clear_result": true
+    },
+    "uniform:3045": {
+      "active_minus_fixed_time_s": -26.40792320904984,
+      "active_minus_fixed_move_m": -372.03961604524375,
+      "same_clear_result": true
+    },
+    "clustered:3046": {
+      "active_minus_fixed_time_s": -776.1534711849417,
+      "active_minus_fixed_move_m": -4090.767355924694,
+      "same_clear_result": true
+    },
+    "edge:3046": {
+      "active_minus_fixed_time_s": 38.0,
+      "active_minus_fixed_move_m": -3.637978807091713e-12,
+      "same_clear_result": true
+    },
+    "max_error:3046": {
+      "active_minus_fixed_time_s": 47.0,
+      "active_minus_fixed_move_m": 3.637978807091713e-12,
+      "same_clear_result": true
+    },
+    "min_radius:3046": {
+      "active_minus_fixed_time_s": -202.44899183793132,
+      "active_minus_fixed_move_m": -1202.2449591896439,
+      "same_clear_result": true
+    },
+    "uniform:3046": {
+      "active_minus_fixed_time_s": 47.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "clustered:3047": {
+      "active_minus_fixed_time_s": -1433.0950341909102,
+      "active_minus_fixed_move_m": -7455.475170954542,
+      "same_clear_result": true
+    },
+    "edge:3047": {
+      "active_minus_fixed_time_s": -446.86003957088906,
+      "active_minus_fixed_move_m": -2344.300197854449,
+      "same_clear_result": true
+    },
+    "max_error:3047": {
+      "active_minus_fixed_time_s": -332.39781611684975,
+      "active_minus_fixed_move_m": -1896.9890805842442,
+      "same_clear_result": true
+    },
+    "min_radius:3047": {
+      "active_minus_fixed_time_s": -460.90621480760365,
+      "active_minus_fixed_move_m": -2409.5310740380155,
+      "same_clear_result": true
+    },
+    "uniform:3047": {
+      "active_minus_fixed_time_s": -334.2879933604372,
+      "active_minus_fixed_move_m": -1906.4399668021797,
+      "same_clear_result": true
+    },
+    "clustered:3048": {
+      "active_minus_fixed_time_s": -526.8925182678204,
+      "active_minus_fixed_move_m": -2839.4625913390882,
+      "same_clear_result": true
+    },
+    "edge:3048": {
+      "active_minus_fixed_time_s": 41.51630247190769,
+      "active_minus_fixed_move_m": -37.41848764046517,
+      "same_clear_result": true
+    },
+    "max_error:3048": {
+      "active_minus_fixed_time_s": -198.6702870717645,
+      "active_minus_fixed_move_m": -1118.351435358818,
+      "same_clear_result": true
+    },
+    "min_radius:3048": {
+      "active_minus_fixed_time_s": 15.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3048": {
+      "active_minus_fixed_time_s": -289.03612599936514,
+      "active_minus_fixed_move_m": -1565.1806299968266,
+      "same_clear_result": true
+    },
+    "clustered:3049": {
+      "active_minus_fixed_time_s": -1280.8759719920263,
+      "active_minus_fixed_move_m": -6709.379859960107,
+      "same_clear_result": true
+    },
+    "edge:3049": {
+      "active_minus_fixed_time_s": 56.13988899523338,
+      "active_minus_fixed_move_m": 30.699444976169616,
+      "same_clear_result": true
+    },
+    "max_error:3049": {
+      "active_minus_fixed_time_s": 346.971741734641,
+      "active_minus_fixed_move_m": 1554.8587086732077,
+      "same_clear_result": true
+    },
+    "min_radius:3049": {
+      "active_minus_fixed_time_s": -73.55216941775689,
+      "active_minus_fixed_move_m": -542.760847088779,
+      "same_clear_result": true
+    },
+    "uniform:3049": {
+      "active_minus_fixed_time_s": 342.36530821265296,
+      "active_minus_fixed_move_m": 1556.8265410632666,
+      "same_clear_result": true
+    },
+    "clustered:3050": {
+      "active_minus_fixed_time_s": -809.3674005525563,
+      "active_minus_fixed_move_m": -4311.837002762772,
+      "same_clear_result": true
+    },
+    "edge:3050": {
+      "active_minus_fixed_time_s": 314.4956746183161,
+      "active_minus_fixed_move_m": 1417.4783730915806,
+      "same_clear_result": true
+    },
+    "max_error:3050": {
+      "active_minus_fixed_time_s": -377.39614389453345,
+      "active_minus_fixed_move_m": -2116.9807194726527,
+      "same_clear_result": true
+    },
+    "min_radius:3050": {
+      "active_minus_fixed_time_s": -504.1285214589743,
+      "active_minus_fixed_move_m": -2690.6426072948743,
+      "same_clear_result": true
+    },
+    "uniform:3050": {
+      "active_minus_fixed_time_s": -376.553059428441,
+      "active_minus_fixed_move_m": -2137.7652971421776,
+      "same_clear_result": true
+    },
+    "clustered:3051": {
+      "active_minus_fixed_time_s": -3426.776085776496,
+      "active_minus_fixed_move_m": -16793.88042888246,
+      "same_clear_result": true
+    },
+    "edge:3051": {
+      "active_minus_fixed_time_s": -882.4697539289409,
+      "active_minus_fixed_move_m": -4612.348769644719,
+      "same_clear_result": true
+    },
+    "max_error:3051": {
+      "active_minus_fixed_time_s": -1160.2852094945438,
+      "active_minus_fixed_move_m": -5726.426047472705,
+      "same_clear_result": true
+    },
+    "min_radius:3051": {
+      "active_minus_fixed_time_s": -741.2451577406682,
+      "active_minus_fixed_move_m": -3766.2257887033556,
+      "same_clear_result": true
+    },
+    "uniform:3051": {
+      "active_minus_fixed_time_s": -1155.961515659541,
+      "active_minus_fixed_move_m": -5704.807578297696,
+      "same_clear_result": true
+    },
+    "clustered:3052": {
+      "active_minus_fixed_time_s": -1034.9413539621128,
+      "active_minus_fixed_move_m": -5424.706769810546,
+      "same_clear_result": true
+    },
+    "edge:3052": {
+      "active_minus_fixed_time_s": -307.8883778903655,
+      "active_minus_fixed_move_m": -1769.4418894518167,
+      "same_clear_result": true
+    },
+    "max_error:3052": {
+      "active_minus_fixed_time_s": -320.9280073447917,
+      "active_minus_fixed_move_m": -1779.6400367239585,
+      "same_clear_result": true
+    },
+    "min_radius:3052": {
+      "active_minus_fixed_time_s": 105.87973793009405,
+      "active_minus_fixed_move_m": 244.39868965047572,
+      "same_clear_result": true
+    },
+    "uniform:3052": {
+      "active_minus_fixed_time_s": -320.6648759692371,
+      "active_minus_fixed_move_m": -1778.3243798461772,
+      "same_clear_result": true
+    },
+    "clustered:3053": {
+      "active_minus_fixed_time_s": -1679.1155845627463,
+      "active_minus_fixed_move_m": -8645.57792281371,
+      "same_clear_result": true
+    },
+    "edge:3053": {
+      "active_minus_fixed_time_s": -590.509502404062,
+      "active_minus_fixed_move_m": -3242.5475120203046,
+      "same_clear_result": true
+    },
+    "max_error:3053": {
+      "active_minus_fixed_time_s": -527.0959539727264,
+      "active_minus_fixed_move_m": -2995.479769863632,
+      "same_clear_result": true
+    },
+    "min_radius:3053": {
+      "active_minus_fixed_time_s": -33.49961941413312,
+      "active_minus_fixed_move_m": -417.4980970706747,
+      "same_clear_result": true
+    },
+    "uniform:3053": {
+      "active_minus_fixed_time_s": -526.6270543557221,
+      "active_minus_fixed_move_m": -2993.135271778614,
+      "same_clear_result": true
+    },
+    "clustered:3054": {
+      "active_minus_fixed_time_s": -759.1144476473955,
+      "active_minus_fixed_move_m": -3935.5722382369677,
+      "same_clear_result": true
+    },
+    "edge:3054": {
+      "active_minus_fixed_time_s": -249.9085355506786,
+      "active_minus_fixed_move_m": -1484.542677753394,
+      "same_clear_result": true
+    },
+    "max_error:3054": {
+      "active_minus_fixed_time_s": -329.048351827666,
+      "active_minus_fixed_move_m": -1825.2417591383237,
+      "same_clear_result": true
+    },
+    "min_radius:3054": {
+      "active_minus_fixed_time_s": -147.40929666308875,
+      "active_minus_fixed_move_m": -892.046483315451,
+      "same_clear_result": true
+    },
+    "uniform:3054": {
+      "active_minus_fixed_time_s": -348.9483503472902,
+      "active_minus_fixed_move_m": -1899.7417517364447,
+      "same_clear_result": true
+    },
+    "clustered:3055": {
+      "active_minus_fixed_time_s": -1872.6859359905593,
+      "active_minus_fixed_move_m": -9738.429679952787,
+      "same_clear_result": true
+    },
+    "edge:3055": {
+      "active_minus_fixed_time_s": -531.678653885042,
+      "active_minus_fixed_move_m": -2888.3932694251853,
+      "same_clear_result": true
+    },
+    "max_error:3055": {
+      "active_minus_fixed_time_s": -619.5519827468124,
+      "active_minus_fixed_move_m": -3222.7599137340585,
+      "same_clear_result": true
+    },
+    "min_radius:3055": {
+      "active_minus_fixed_time_s": -722.0531875221541,
+      "active_minus_fixed_move_m": -3900.265937610755,
+      "same_clear_result": true
+    },
+    "uniform:3055": {
+      "active_minus_fixed_time_s": -602.784065107282,
+      "active_minus_fixed_move_m": -3158.920325536412,
+      "same_clear_result": true
+    },
+    "clustered:3056": {
+      "active_minus_fixed_time_s": -679.3599617219379,
+      "active_minus_fixed_move_m": -3691.7998086096704,
+      "same_clear_result": true
+    },
+    "edge:3056": {
+      "active_minus_fixed_time_s": -313.96992718285037,
+      "active_minus_fixed_move_m": -1724.8496359142591,
+      "same_clear_result": true
+    },
+    "max_error:3056": {
+      "active_minus_fixed_time_s": 293.4988734767112,
+      "active_minus_fixed_move_m": 1272.4943673835733,
+      "same_clear_result": true
+    },
+    "min_radius:3056": {
+      "active_minus_fixed_time_s": 222.01472148991706,
+      "active_minus_fixed_move_m": 905.0736074495908,
+      "same_clear_result": true
+    },
+    "uniform:3056": {
+      "active_minus_fixed_time_s": 361.4091009977601,
+      "active_minus_fixed_move_m": 1612.0455049888114,
+      "same_clear_result": true
+    },
+    "clustered:3057": {
+      "active_minus_fixed_time_s": -1265.4251081682587,
+      "active_minus_fixed_move_m": -6582.125540841276,
+      "same_clear_result": true
+    },
+    "edge:3057": {
+      "active_minus_fixed_time_s": -178.11985017335792,
+      "active_minus_fixed_move_m": -1185.599250866806,
+      "same_clear_result": true
+    },
+    "max_error:3057": {
+      "active_minus_fixed_time_s": -420.79483875691767,
+      "active_minus_fixed_move_m": -2338.97419378459,
+      "same_clear_result": true
+    },
+    "min_radius:3057": {
+      "active_minus_fixed_time_s": -259.37372282177785,
+      "active_minus_fixed_move_m": -1531.8686141088765,
+      "same_clear_result": true
+    },
+    "uniform:3057": {
+      "active_minus_fixed_time_s": -429.0547125866997,
+      "active_minus_fixed_move_m": -2330.2735629335,
+      "same_clear_result": true
+    },
+    "clustered:3058": {
+      "active_minus_fixed_time_s": -995.3630819582049,
+      "active_minus_fixed_move_m": -5316.815409791008,
+      "same_clear_result": true
+    },
+    "edge:3058": {
+      "active_minus_fixed_time_s": -290.4604467590325,
+      "active_minus_fixed_move_m": -1697.3022337951625,
+      "same_clear_result": true
+    },
+    "max_error:3058": {
+      "active_minus_fixed_time_s": -454.0148290197485,
+      "active_minus_fixed_move_m": -2475.074145098748,
+      "same_clear_result": true
+    },
+    "min_radius:3058": {
+      "active_minus_fixed_time_s": 101.07301987579376,
+      "active_minus_fixed_move_m": 325.3650993789561,
+      "same_clear_result": true
+    },
+    "uniform:3058": {
+      "active_minus_fixed_time_s": -456.31409658273515,
+      "active_minus_fixed_move_m": -2461.570482913681,
+      "same_clear_result": true
+    },
+    "clustered:3059": {
+      "active_minus_fixed_time_s": -385.3625112527052,
+      "active_minus_fixed_move_m": -2096.8125562635214,
+      "same_clear_result": true
+    },
+    "edge:3059": {
+      "active_minus_fixed_time_s": -108.14598558728176,
+      "active_minus_fixed_move_m": -720.7299279364124,
+      "same_clear_result": true
+    },
+    "max_error:3059": {
+      "active_minus_fixed_time_s": -31.1147215087949,
+      "active_minus_fixed_move_m": -345.57360754397087,
+      "same_clear_result": true
+    },
+    "min_radius:3059": {
+      "active_minus_fixed_time_s": 41.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3059": {
+      "active_minus_fixed_time_s": -31.264424907189095,
+      "active_minus_fixed_move_m": -346.3221245359491,
+      "same_clear_result": true
+    },
+    "clustered:3060": {
+      "active_minus_fixed_time_s": -1017.9661029778663,
+      "active_minus_fixed_move_m": -5284.830514889316,
+      "same_clear_result": true
+    },
+    "edge:3060": {
+      "active_minus_fixed_time_s": -611.6150421155771,
+      "active_minus_fixed_move_m": -3243.0752105778884,
+      "same_clear_result": true
+    },
+    "max_error:3060": {
+      "active_minus_fixed_time_s": -252.65025913400768,
+      "active_minus_fixed_move_m": -1348.2512956700375,
+      "same_clear_result": true
+    },
+    "min_radius:3060": {
+      "active_minus_fixed_time_s": 2.7766635132666124,
+      "active_minus_fixed_move_m": -141.11668243366876,
+      "same_clear_result": true
+    },
+    "uniform:3060": {
+      "active_minus_fixed_time_s": -245.31338700380093,
+      "active_minus_fixed_move_m": -1336.5669350190074,
+      "same_clear_result": true
+    },
+    "clustered:3061": {
+      "active_minus_fixed_time_s": -531.9258484579477,
+      "active_minus_fixed_move_m": -2844.6292422897386,
+      "same_clear_result": true
+    },
+    "edge:3061": {
+      "active_minus_fixed_time_s": 29.068128529581372,
+      "active_minus_fixed_move_m": 30.340642647905042,
+      "same_clear_result": true
+    },
+    "max_error:3061": {
+      "active_minus_fixed_time_s": 2.3020433244682863,
+      "active_minus_fixed_move_m": -158.48978337765948,
+      "same_clear_result": true
+    },
+    "min_radius:3061": {
+      "active_minus_fixed_time_s": 93.17621511634661,
+      "active_minus_fixed_move_m": 300.8810755817467,
+      "same_clear_result": true
+    },
+    "uniform:3061": {
+      "active_minus_fixed_time_s": 5.938984171300035,
+      "active_minus_fixed_move_m": -165.30507914350528,
+      "same_clear_result": true
+    },
+    "clustered:3062": {
+      "active_minus_fixed_time_s": -2993.277061810317,
+      "active_minus_fixed_move_m": -14581.385309051573,
+      "same_clear_result": true
+    },
+    "edge:3062": {
+      "active_minus_fixed_time_s": -564.7181674822768,
+      "active_minus_fixed_move_m": -3238.590837411357,
+      "same_clear_result": true
+    },
+    "max_error:3062": {
+      "active_minus_fixed_time_s": -132.3783363179864,
+      "active_minus_fixed_move_m": -851.8916815899211,
+      "same_clear_result": true
+    },
+    "min_radius:3062": {
+      "active_minus_fixed_time_s": -318.96561684450535,
+      "active_minus_fixed_move_m": -1624.8280842225213,
+      "same_clear_result": true
+    },
+    "uniform:3062": {
+      "active_minus_fixed_time_s": -134.70190173876108,
+      "active_minus_fixed_move_m": -863.509508693809,
+      "same_clear_result": true
+    },
+    "clustered:3063": {
+      "active_minus_fixed_time_s": -1115.3476506613142,
+      "active_minus_fixed_move_m": -5811.738253306554,
+      "same_clear_result": true
+    },
+    "edge:3063": {
+      "active_minus_fixed_time_s": -54.649359564776205,
+      "active_minus_fixed_move_m": -438.246797823871,
+      "same_clear_result": true
+    },
+    "max_error:3063": {
+      "active_minus_fixed_time_s": 185.9080105703797,
+      "active_minus_fixed_move_m": 669.5400528518949,
+      "same_clear_result": true
+    },
+    "min_radius:3063": {
+      "active_minus_fixed_time_s": -251.5686467349069,
+      "active_minus_fixed_move_m": -1477.8432336745318,
+      "same_clear_result": true
+    },
+    "uniform:3063": {
+      "active_minus_fixed_time_s": 185.4172988759974,
+      "active_minus_fixed_move_m": 667.0864943799825,
+      "same_clear_result": true
+    },
+    "clustered:3064": {
+      "active_minus_fixed_time_s": -359.87121612090596,
+      "active_minus_fixed_move_m": -2094.3560806045352,
+      "same_clear_result": true
+    },
+    "edge:3064": {
+      "active_minus_fixed_time_s": 94.68208269629213,
+      "active_minus_fixed_move_m": 298.4104134814479,
+      "same_clear_result": true
+    },
+    "max_error:3064": {
+      "active_minus_fixed_time_s": -210.80296331954196,
+      "active_minus_fixed_move_m": -1359.0148165976789,
+      "same_clear_result": true
+    },
+    "min_radius:3064": {
+      "active_minus_fixed_time_s": -87.74427662388098,
+      "active_minus_fixed_move_m": -638.7213831193949,
+      "same_clear_result": true
+    },
+    "uniform:3064": {
+      "active_minus_fixed_time_s": -231.81633823062475,
+      "active_minus_fixed_move_m": -1439.0816911531,
+      "same_clear_result": true
+    },
+    "clustered:3065": {
+      "active_minus_fixed_time_s": -345.2134190752431,
+      "active_minus_fixed_move_m": -1956.0670953762165,
+      "same_clear_result": true
+    },
+    "edge:3065": {
+      "active_minus_fixed_time_s": -436.9910683412709,
+      "active_minus_fixed_move_m": -2459.955341706358,
+      "same_clear_result": true
+    },
+    "max_error:3065": {
+      "active_minus_fixed_time_s": -410.8541849008725,
+      "active_minus_fixed_move_m": -2264.270924504359,
+      "same_clear_result": true
+    },
+    "min_radius:3065": {
+      "active_minus_fixed_time_s": -432.89227681433385,
+      "active_minus_fixed_move_m": -2459.461384071663,
+      "same_clear_result": true
+    },
+    "uniform:3065": {
+      "active_minus_fixed_time_s": -394.45151366185564,
+      "active_minus_fixed_move_m": -2182.2575683092728,
+      "same_clear_result": true
+    },
+    "clustered:3066": {
+      "active_minus_fixed_time_s": -495.2613328180023,
+      "active_minus_fixed_move_m": -2726.306664090007,
+      "same_clear_result": true
+    },
+    "edge:3066": {
+      "active_minus_fixed_time_s": -2.753825665554359,
+      "active_minus_fixed_move_m": -208.76912832777452,
+      "same_clear_result": true
+    },
+    "max_error:3066": {
+      "active_minus_fixed_time_s": 28.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "min_radius:3066": {
+      "active_minus_fixed_time_s": 2.280007905816092,
+      "active_minus_fixed_move_m": -233.599960470925,
+      "same_clear_result": true
+    },
+    "uniform:3066": {
+      "active_minus_fixed_time_s": 37.99999999999818,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "clustered:3067": {
+      "active_minus_fixed_time_s": -159.28155390308348,
+      "active_minus_fixed_move_m": -946.4077695154265,
+      "same_clear_result": true
+    },
+    "edge:3067": {
+      "active_minus_fixed_time_s": -314.1312418163707,
+      "active_minus_fixed_move_m": -1795.6562090818516,
+      "same_clear_result": true
+    },
+    "max_error:3067": {
+      "active_minus_fixed_time_s": 286.19866735791675,
+      "active_minus_fixed_move_m": 1255.9933367895792,
+      "same_clear_result": true
+    },
+    "min_radius:3067": {
+      "active_minus_fixed_time_s": 138.64493507032057,
+      "active_minus_fixed_move_m": 548.2246753515974,
+      "same_clear_result": true
+    },
+    "uniform:3067": {
+      "active_minus_fixed_time_s": 284.9703977036861,
+      "active_minus_fixed_move_m": 1249.851988518436,
+      "same_clear_result": true
+    },
+    "clustered:3068": {
+      "active_minus_fixed_time_s": -671.098373396564,
+      "active_minus_fixed_move_m": -3585.491866982811,
+      "same_clear_result": true
+    },
+    "edge:3068": {
+      "active_minus_fixed_time_s": -13.223285023934295,
+      "active_minus_fixed_move_m": -281.1164251196751,
+      "same_clear_result": true
+    },
+    "max_error:3068": {
+      "active_minus_fixed_time_s": -159.5333686212789,
+      "active_minus_fixed_move_m": -972.6668431064027,
+      "same_clear_result": true
+    },
+    "min_radius:3068": {
+      "active_minus_fixed_time_s": 37.03869988435963,
+      "active_minus_fixed_move_m": -14.806500578197301,
+      "same_clear_result": true
+    },
+    "uniform:3068": {
+      "active_minus_fixed_time_s": -159.42576975492102,
+      "active_minus_fixed_move_m": -972.1288487746133,
+      "same_clear_result": true
+    },
+    "clustered:3069": {
+      "active_minus_fixed_time_s": -435.6928370794285,
+      "active_minus_fixed_move_m": -2348.464185397137,
+      "same_clear_result": true
+    },
+    "edge:3069": {
+      "active_minus_fixed_time_s": -254.89410947846045,
+      "active_minus_fixed_move_m": -1529.4705473923095,
+      "same_clear_result": true
+    },
+    "max_error:3069": {
+      "active_minus_fixed_time_s": -580.5391252046174,
+      "active_minus_fixed_move_m": -3042.6956260230836,
+      "same_clear_result": true
+    },
+    "min_radius:3069": {
+      "active_minus_fixed_time_s": -157.0162985974057,
+      "active_minus_fixed_move_m": -940.0814929870248,
+      "same_clear_result": true
+    },
+    "uniform:3069": {
+      "active_minus_fixed_time_s": -585.7432739075639,
+      "active_minus_fixed_move_m": -3068.7163695378076,
+      "same_clear_result": true
+    },
+    "clustered:3070": {
+      "active_minus_fixed_time_s": -1566.3672456942804,
+      "active_minus_fixed_move_m": -8071.836228471391,
+      "same_clear_result": true
+    },
+    "edge:3070": {
+      "active_minus_fixed_time_s": 41.00000000000182,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "max_error:3070": {
+      "active_minus_fixed_time_s": -416.92412734403297,
+      "active_minus_fixed_move_m": -2264.6206367201594,
+      "same_clear_result": true
+    },
+    "min_radius:3070": {
+      "active_minus_fixed_time_s": -251.21453972191648,
+      "active_minus_fixed_move_m": -1531.0726986095979,
+      "same_clear_result": true
+    },
+    "uniform:3070": {
+      "active_minus_fixed_time_s": -414.67144341179664,
+      "active_minus_fixed_move_m": -2253.3572170589687,
+      "same_clear_result": true
+    },
+    "clustered:3071": {
+      "active_minus_fixed_time_s": -695.7294403400556,
+      "active_minus_fixed_move_m": -3648.6472017002707,
+      "same_clear_result": true
+    },
+    "edge:3071": {
+      "active_minus_fixed_time_s": -62.244064238527244,
+      "active_minus_fixed_move_m": -416.22032119263895,
+      "same_clear_result": true
+    },
+    "max_error:3071": {
+      "active_minus_fixed_time_s": -281.60216852490066,
+      "active_minus_fixed_move_m": -1593.0108426244915,
+      "same_clear_result": true
+    },
+    "min_radius:3071": {
+      "active_minus_fixed_time_s": 39.688846522706626,
+      "active_minus_fixed_move_m": -21.55576738646414,
+      "same_clear_result": true
+    },
+    "uniform:3071": {
+      "active_minus_fixed_time_s": -282.13389774750704,
+      "active_minus_fixed_move_m": -1595.6694887375343,
+      "same_clear_result": true
+    },
+    "clustered:3072": {
+      "active_minus_fixed_time_s": -895.5959706827216,
+      "active_minus_fixed_move_m": -4687.979853413599,
+      "same_clear_result": true
+    },
+    "edge:3072": {
+      "active_minus_fixed_time_s": -478.9705361705692,
+      "active_minus_fixed_move_m": -2639.852680852837,
+      "same_clear_result": true
+    },
+    "max_error:3072": {
+      "active_minus_fixed_time_s": -252.69129935645742,
+      "active_minus_fixed_move_m": -1413.4564967822807,
+      "same_clear_result": true
+    },
+    "min_radius:3072": {
+      "active_minus_fixed_time_s": 35.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3072": {
+      "active_minus_fixed_time_s": -248.55202238693437,
+      "active_minus_fixed_move_m": -1392.7601119346655,
+      "same_clear_result": true
+    },
+    "clustered:3073": {
+      "active_minus_fixed_time_s": -1400.1761867171126,
+      "active_minus_fixed_move_m": -7245.880933585551,
+      "same_clear_result": true
+    },
+    "edge:3073": {
+      "active_minus_fixed_time_s": -193.46183091320836,
+      "active_minus_fixed_move_m": -1152.309154566039,
+      "same_clear_result": true
+    },
+    "max_error:3073": {
+      "active_minus_fixed_time_s": -330.61681389959267,
+      "active_minus_fixed_move_m": -1893.0840694979634,
+      "same_clear_result": true
+    },
+    "min_radius:3073": {
+      "active_minus_fixed_time_s": 39.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3073": {
+      "active_minus_fixed_time_s": -413.5202760361508,
+      "active_minus_fixed_move_m": -2302.6013801807567,
+      "same_clear_result": true
+    },
+    "clustered:3074": {
+      "active_minus_fixed_time_s": -1062.568587976084,
+      "active_minus_fixed_move_m": -5562.842939880404,
+      "same_clear_result": true
+    },
+    "edge:3074": {
+      "active_minus_fixed_time_s": -597.1741061714356,
+      "active_minus_fixed_move_m": -3130.870530857177,
+      "same_clear_result": true
+    },
+    "max_error:3074": {
+      "active_minus_fixed_time_s": -638.5662974983716,
+      "active_minus_fixed_move_m": -3417.831487491858,
+      "same_clear_result": true
+    },
+    "min_radius:3074": {
+      "active_minus_fixed_time_s": -76.87191846510905,
+      "active_minus_fixed_move_m": -519.3595923255452,
+      "same_clear_result": true
+    },
+    "uniform:3074": {
+      "active_minus_fixed_time_s": -641.0083752874953,
+      "active_minus_fixed_move_m": -3430.0418764374663,
+      "same_clear_result": true
+    },
+    "clustered:3075": {
+      "active_minus_fixed_time_s": -1342.9228503206368,
+      "active_minus_fixed_move_m": -6984.614251603176,
+      "same_clear_result": true
+    },
+    "edge:3075": {
+      "active_minus_fixed_time_s": -34.76889701486289,
+      "active_minus_fixed_move_m": -398.8444850743035,
+      "same_clear_result": true
+    },
+    "max_error:3075": {
+      "active_minus_fixed_time_s": -405.90210214175113,
+      "active_minus_fixed_move_m": -2219.5105107087293,
+      "same_clear_result": true
+    },
+    "min_radius:3075": {
+      "active_minus_fixed_time_s": -288.45976255945607,
+      "active_minus_fixed_move_m": -1717.2988127972822,
+      "same_clear_result": true
+    },
+    "uniform:3075": {
+      "active_minus_fixed_time_s": -396.91404595187487,
+      "active_minus_fixed_move_m": -2199.57022975936,
+      "same_clear_result": true
+    },
+    "clustered:3076": {
+      "active_minus_fixed_time_s": -1259.3782152717258,
+      "active_minus_fixed_move_m": -6561.891076358621,
+      "same_clear_result": true
+    },
+    "edge:3076": {
+      "active_minus_fixed_time_s": -102.84576848878442,
+      "active_minus_fixed_move_m": -709.2288424439248,
+      "same_clear_result": true
+    },
+    "max_error:3076": {
+      "active_minus_fixed_time_s": 176.20333445650795,
+      "active_minus_fixed_move_m": 616.0166722825306,
+      "same_clear_result": true
+    },
+    "min_radius:3076": {
+      "active_minus_fixed_time_s": 43.51653539917788,
+      "active_minus_fixed_move_m": -27.41732300411968,
+      "same_clear_result": true
+    },
+    "uniform:3076": {
+      "active_minus_fixed_time_s": 168.98800863969882,
+      "active_minus_fixed_move_m": 629.9400431984977,
+      "same_clear_result": true
+    },
+    "clustered:3077": {
+      "active_minus_fixed_time_s": -1336.328430232018,
+      "active_minus_fixed_move_m": -6941.642151160082,
+      "same_clear_result": true
+    },
+    "edge:3077": {
+      "active_minus_fixed_time_s": -241.085587354979,
+      "active_minus_fixed_move_m": -1415.427936774886,
+      "same_clear_result": true
+    },
+    "max_error:3077": {
+      "active_minus_fixed_time_s": -232.6788845081055,
+      "active_minus_fixed_move_m": -1393.3944225405357,
+      "same_clear_result": true
+    },
+    "min_radius:3077": {
+      "active_minus_fixed_time_s": 13.728828277394314,
+      "active_minus_fixed_move_m": -161.35585861303116,
+      "same_clear_result": true
+    },
+    "uniform:3077": {
+      "active_minus_fixed_time_s": -201.62671957867497,
+      "active_minus_fixed_move_m": -1213.133597893382,
+      "same_clear_result": true
+    },
+    "clustered:3078": {
+      "active_minus_fixed_time_s": -229.28492438410103,
+      "active_minus_fixed_move_m": -1376.4246219205124,
+      "same_clear_result": true
+    },
+    "edge:3078": {
+      "active_minus_fixed_time_s": 30.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "max_error:3078": {
+      "active_minus_fixed_time_s": 36.84066383006302,
+      "active_minus_fixed_move_m": -0.7966808496821614,
+      "same_clear_result": true
+    },
+    "min_radius:3078": {
+      "active_minus_fixed_time_s": 331.3554618663593,
+      "active_minus_fixed_move_m": 1506.7773093317955,
+      "same_clear_result": true
+    },
+    "uniform:3078": {
+      "active_minus_fixed_time_s": 36.88065197184915,
+      "active_minus_fixed_move_m": -0.5967401407579018,
+      "same_clear_result": true
+    },
+    "clustered:3079": {
+      "active_minus_fixed_time_s": -477.1440290059163,
+      "active_minus_fixed_move_m": -2645.7201450295834,
+      "same_clear_result": true
+    },
+    "edge:3079": {
+      "active_minus_fixed_time_s": -497.61247986065155,
+      "active_minus_fixed_move_m": -2783.0623993032423,
+      "same_clear_result": true
+    },
+    "max_error:3079": {
+      "active_minus_fixed_time_s": -744.5787448023748,
+      "active_minus_fixed_move_m": -3962.8937240118757,
+      "same_clear_result": true
+    },
+    "min_radius:3079": {
+      "active_minus_fixed_time_s": -15.376663331606323,
+      "active_minus_fixed_move_m": -336.8833166580225,
+      "same_clear_result": true
+    },
+    "uniform:3079": {
+      "active_minus_fixed_time_s": -747.789451038263,
+      "active_minus_fixed_move_m": -3978.9472551913204,
+      "same_clear_result": true
+    },
+    "clustered:3080": {
+      "active_minus_fixed_time_s": -1139.881757988117,
+      "active_minus_fixed_move_m": -5919.408789940571,
+      "same_clear_result": true
+    },
+    "edge:3080": {
+      "active_minus_fixed_time_s": -87.70213273064655,
+      "active_minus_fixed_move_m": -618.5106636532364,
+      "same_clear_result": true
+    },
+    "max_error:3080": {
+      "active_minus_fixed_time_s": -215.9821404033255,
+      "active_minus_fixed_move_m": -1259.910702016612,
+      "same_clear_result": true
+    },
+    "min_radius:3080": {
+      "active_minus_fixed_time_s": -18.2367411435107,
+      "active_minus_fixed_move_m": -376.18370571755077,
+      "same_clear_result": true
+    },
+    "uniform:3080": {
+      "active_minus_fixed_time_s": -218.31906570880074,
+      "active_minus_fixed_move_m": -1271.5953285439973,
+      "same_clear_result": true
+    },
+    "clustered:3081": {
+      "active_minus_fixed_time_s": -374.61196221520913,
+      "active_minus_fixed_move_m": -2098.059811076044,
+      "same_clear_result": true
+    },
+    "edge:3081": {
+      "active_minus_fixed_time_s": -492.4662290825945,
+      "active_minus_fixed_move_m": -2562.33114541298,
+      "same_clear_result": true
+    },
+    "max_error:3081": {
+      "active_minus_fixed_time_s": -315.3164846932041,
+      "active_minus_fixed_move_m": -1751.582423466025,
+      "same_clear_result": true
+    },
+    "min_radius:3081": {
+      "active_minus_fixed_time_s": 84.83947255744624,
+      "active_minus_fixed_move_m": 254.19736278723576,
+      "same_clear_result": true
+    },
+    "uniform:3081": {
+      "active_minus_fixed_time_s": -325.00144221194023,
+      "active_minus_fixed_move_m": -1775.007211059703,
+      "same_clear_result": true
+    },
+    "clustered:3082": {
+      "active_minus_fixed_time_s": -3024.4118971613707,
+      "active_minus_fixed_move_m": -14682.059485806847,
+      "same_clear_result": true
+    },
+    "edge:3082": {
+      "active_minus_fixed_time_s": -692.2439559519553,
+      "active_minus_fixed_move_m": -3466.2197797597546,
+      "same_clear_result": true
+    },
+    "max_error:3082": {
+      "active_minus_fixed_time_s": -767.3234457686121,
+      "active_minus_fixed_move_m": -4041.6172288430535,
+      "same_clear_result": true
+    },
+    "min_radius:3082": {
+      "active_minus_fixed_time_s": -283.5464156847356,
+      "active_minus_fixed_move_m": -1582.7320784236654,
+      "same_clear_result": true
+    },
+    "uniform:3082": {
+      "active_minus_fixed_time_s": -774.2391285884369,
+      "active_minus_fixed_move_m": -4076.195642942177,
+      "same_clear_result": true
+    },
+    "clustered:3083": {
+      "active_minus_fixed_time_s": -4206.001619849196,
+      "active_minus_fixed_move_m": -20625.008099245948,
+      "same_clear_result": true
+    },
+    "edge:3083": {
+      "active_minus_fixed_time_s": -823.2552284287831,
+      "active_minus_fixed_move_m": -4331.276142143928,
+      "same_clear_result": true
+    },
+    "max_error:3083": {
+      "active_minus_fixed_time_s": -87.87868280861949,
+      "active_minus_fixed_move_m": -709.3934140431011,
+      "same_clear_result": true
+    },
+    "min_radius:3083": {
+      "active_minus_fixed_time_s": 75.3831366243885,
+      "active_minus_fixed_move_m": 296.9156831219516,
+      "same_clear_result": true
+    },
+    "uniform:3083": {
+      "active_minus_fixed_time_s": -90.30665024997143,
+      "active_minus_fixed_move_m": -721.5332512498644,
+      "same_clear_result": true
+    },
+    "clustered:3084": {
+      "active_minus_fixed_time_s": -1242.2997471284725,
+      "active_minus_fixed_move_m": -6606.498735642337,
+      "same_clear_result": true
+    },
+    "edge:3084": {
+      "active_minus_fixed_time_s": -17.97844978352441,
+      "active_minus_fixed_move_m": -279.8922489176257,
+      "same_clear_result": true
+    },
+    "max_error:3084": {
+      "active_minus_fixed_time_s": -316.63146061189946,
+      "active_minus_fixed_move_m": -1878.1573030594882,
+      "same_clear_result": true
+    },
+    "min_radius:3084": {
+      "active_minus_fixed_time_s": -75.03899887878651,
+      "active_minus_fixed_move_m": -680.1949943939253,
+      "same_clear_result": true
+    },
+    "uniform:3084": {
+      "active_minus_fixed_time_s": -319.7631520871673,
+      "active_minus_fixed_move_m": -1893.8157604358348,
+      "same_clear_result": true
+    },
+    "clustered:3085": {
+      "active_minus_fixed_time_s": -359.19019538255,
+      "active_minus_fixed_move_m": -1920.9509769127399,
+      "same_clear_result": true
+    },
+    "edge:3085": {
+      "active_minus_fixed_time_s": -74.73219477217935,
+      "active_minus_fixed_move_m": -548.6609738608931,
+      "same_clear_result": true
+    },
+    "max_error:3085": {
+      "active_minus_fixed_time_s": 26.363184774492765,
+      "active_minus_fixed_move_m": -53.184076127534354,
+      "same_clear_result": true
+    },
+    "min_radius:3085": {
+      "active_minus_fixed_time_s": -71.49804727647643,
+      "active_minus_fixed_move_m": -562.4902363823821,
+      "same_clear_result": true
+    },
+    "uniform:3085": {
+      "active_minus_fixed_time_s": 35.26603562915898,
+      "active_minus_fixed_move_m": -58.66982185420784,
+      "same_clear_result": true
+    },
+    "clustered:3086": {
+      "active_minus_fixed_time_s": -857.5065418652957,
+      "active_minus_fixed_move_m": -4512.532709326468,
+      "same_clear_result": true
+    },
+    "edge:3086": {
+      "active_minus_fixed_time_s": 50.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "max_error:3086": {
+      "active_minus_fixed_time_s": 35.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "min_radius:3086": {
+      "active_minus_fixed_time_s": 34.13062736868051,
+      "active_minus_fixed_move_m": -59.346863156595646,
+      "same_clear_result": true
+    },
+    "uniform:3086": {
+      "active_minus_fixed_time_s": 30.0,
+      "active_minus_fixed_move_m": -3.637978807091713e-12,
+      "same_clear_result": true
+    },
+    "clustered:3087": {
+      "active_minus_fixed_time_s": -601.0430101382954,
+      "active_minus_fixed_move_m": -3345.215050691473,
+      "same_clear_result": true
+    },
+    "edge:3087": {
+      "active_minus_fixed_time_s": -269.50865946631166,
+      "active_minus_fixed_move_m": -1632.5432973315474,
+      "same_clear_result": true
+    },
+    "max_error:3087": {
+      "active_minus_fixed_time_s": -377.2318264086989,
+      "active_minus_fixed_move_m": -2186.1591320434964,
+      "same_clear_result": true
+    },
+    "min_radius:3087": {
+      "active_minus_fixed_time_s": -348.42460674156246,
+      "active_minus_fixed_move_m": -2037.123033707794,
+      "same_clear_result": true
+    },
+    "uniform:3087": {
+      "active_minus_fixed_time_s": -375.04174200974376,
+      "active_minus_fixed_move_m": -2175.208710048719,
+      "same_clear_result": true
+    },
+    "clustered:3088": {
+      "active_minus_fixed_time_s": -1451.0382423023375,
+      "active_minus_fixed_move_m": -7490.191211511683,
+      "same_clear_result": true
+    },
+    "edge:3088": {
+      "active_minus_fixed_time_s": -217.3114039285174,
+      "active_minus_fixed_move_m": -1256.5570196425833,
+      "same_clear_result": true
+    },
+    "max_error:3088": {
+      "active_minus_fixed_time_s": 1.0027378525801396,
+      "active_minus_fixed_move_m": -254.9863107370984,
+      "same_clear_result": true
+    },
+    "min_radius:3088": {
+      "active_minus_fixed_time_s": -153.0967046289461,
+      "active_minus_fixed_move_m": -945.4835231447323,
+      "same_clear_result": true
+    },
+    "uniform:3088": {
+      "active_minus_fixed_time_s": 2.749924553620076,
+      "active_minus_fixed_move_m": -246.25037723189598,
+      "same_clear_result": true
+    },
+    "clustered:3089": {
+      "active_minus_fixed_time_s": -461.5290295322111,
+      "active_minus_fixed_move_m": -2552.6451476610455,
+      "same_clear_result": true
+    },
+    "edge:3089": {
+      "active_minus_fixed_time_s": 536.8864195169863,
+      "active_minus_fixed_move_m": 2499.4320975849223,
+      "same_clear_result": true
+    },
+    "max_error:3089": {
+      "active_minus_fixed_time_s": -47.310121779796646,
+      "active_minus_fixed_move_m": -471.5506088989787,
+      "same_clear_result": true
+    },
+    "min_radius:3089": {
+      "active_minus_fixed_time_s": 40.0,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3089": {
+      "active_minus_fixed_time_s": -48.58018848714255,
+      "active_minus_fixed_move_m": -477.90094243571366,
+      "same_clear_result": true
+    },
+    "clustered:3090": {
+      "active_minus_fixed_time_s": -869.9005750430542,
+      "active_minus_fixed_move_m": -4464.502875215261,
+      "same_clear_result": true
+    },
+    "edge:3090": {
+      "active_minus_fixed_time_s": -202.05764109046595,
+      "active_minus_fixed_move_m": -1305.2882054523252,
+      "same_clear_result": true
+    },
+    "max_error:3090": {
+      "active_minus_fixed_time_s": -446.02326567492946,
+      "active_minus_fixed_move_m": -2485.1163283746355,
+      "same_clear_result": true
+    },
+    "min_radius:3090": {
+      "active_minus_fixed_time_s": 76.15999911954623,
+      "active_minus_fixed_move_m": 75.79999559772841,
+      "same_clear_result": true
+    },
+    "uniform:3090": {
+      "active_minus_fixed_time_s": -449.6165862516127,
+      "active_minus_fixed_move_m": -2478.0829312580536,
+      "same_clear_result": true
+    },
+    "clustered:3091": {
+      "active_minus_fixed_time_s": -992.1480500117977,
+      "active_minus_fixed_move_m": -5170.740250058967,
+      "same_clear_result": true
+    },
+    "edge:3091": {
+      "active_minus_fixed_time_s": -151.14984071669733,
+      "active_minus_fixed_move_m": -965.749203583473,
+      "same_clear_result": true
+    },
+    "max_error:3091": {
+      "active_minus_fixed_time_s": 37.40260622174537,
+      "active_minus_fixed_move_m": -42.9869688912695,
+      "same_clear_result": true
+    },
+    "min_radius:3091": {
+      "active_minus_fixed_time_s": 489.58802213127274,
+      "active_minus_fixed_move_m": 2247.94011065636,
+      "same_clear_result": true
+    },
+    "uniform:3091": {
+      "active_minus_fixed_time_s": 32.601260013034334,
+      "active_minus_fixed_move_m": -41.99369993482469,
+      "same_clear_result": true
+    },
+    "clustered:3092": {
+      "active_minus_fixed_time_s": -472.6110958133522,
+      "active_minus_fixed_move_m": -2558.055479066763,
+      "same_clear_result": true
+    },
+    "edge:3092": {
+      "active_minus_fixed_time_s": -228.2262791330595,
+      "active_minus_fixed_move_m": -1221.131395665303,
+      "same_clear_result": true
+    },
+    "max_error:3092": {
+      "active_minus_fixed_time_s": -2.656337703489953,
+      "active_minus_fixed_move_m": -198.2816885174543,
+      "same_clear_result": true
+    },
+    "min_radius:3092": {
+      "active_minus_fixed_time_s": -324.6944125390346,
+      "active_minus_fixed_move_m": -1858.4720626951712,
+      "same_clear_result": true
+    },
+    "uniform:3092": {
+      "active_minus_fixed_time_s": -8.273781369538483,
+      "active_minus_fixed_move_m": -201.36890684769605,
+      "same_clear_result": true
+    },
+    "clustered:3093": {
+      "active_minus_fixed_time_s": -468.9549318364616,
+      "active_minus_fixed_move_m": -2614.774659182305,
+      "same_clear_result": true
+    },
+    "edge:3093": {
+      "active_minus_fixed_time_s": -275.78000451948174,
+      "active_minus_fixed_move_m": -1668.9000225974232,
+      "same_clear_result": true
+    },
+    "max_error:3093": {
+      "active_minus_fixed_time_s": -173.991675603771,
+      "active_minus_fixed_move_m": -1059.9583780188623,
+      "same_clear_result": true
+    },
+    "min_radius:3093": {
+      "active_minus_fixed_time_s": 31.00000000000182,
+      "active_minus_fixed_move_m": 0.0,
+      "same_clear_result": true
+    },
+    "uniform:3093": {
+      "active_minus_fixed_time_s": -188.3590788457659,
+      "active_minus_fixed_move_m": -1131.795394228844,
+      "same_clear_result": true
+    },
+    "clustered:3094": {
+      "active_minus_fixed_time_s": -481.88238728458964,
+      "active_minus_fixed_move_m": -2594.411936422941,
+      "same_clear_result": true
+    },
+    "edge:3094": {
+      "active_minus_fixed_time_s": 96.97708484443592,
+      "active_minus_fixed_move_m": 179.88542422218597,
+      "same_clear_result": true
+    },
+    "max_error:3094": {
+      "active_minus_fixed_time_s": 40.3627572414498,
+      "active_minus_fixed_move_m": -73.18621379273827,
+      "same_clear_result": true
+    },
+    "min_radius:3094": {
+      "active_minus_fixed_time_s": 11.112083150774197,
+      "active_minus_fixed_move_m": -199.43958424612356,
+      "same_clear_result": true
+    },
+    "uniform:3094": {
+      "active_minus_fixed_time_s": 39.555252947378904,
+      "active_minus_fixed_move_m": -52.223735263098206,
+      "same_clear_result": true
+    },
+    "clustered:3095": {
+      "active_minus_fixed_time_s": -705.5378939294333,
+      "active_minus_fixed_move_m": -3742.6894696471536,
+      "same_clear_result": true
+    },
+    "edge:3095": {
+      "active_minus_fixed_time_s": 327.5068496015165,
+      "active_minus_fixed_move_m": 1367.5342480075815,
+      "same_clear_result": true
+    },
+    "max_error:3095": {
+      "active_minus_fixed_time_s": 26.72336185693348,
+      "active_minus_fixed_move_m": -61.383190715328965,
+      "same_clear_result": true
+    },
+    "min_radius:3095": {
+      "active_minus_fixed_time_s": -258.4752174412606,
+      "active_minus_fixed_move_m": -1497.3760872063067,
+      "same_clear_result": true
+    },
+    "uniform:3095": {
+      "active_minus_fixed_time_s": 21.96967809322723,
+      "active_minus_fixed_move_m": -60.151609533866576,
+      "same_clear_result": true
+    },
+    "clustered:3096": {
+      "active_minus_fixed_time_s": -2695.4012908191416,
+      "active_minus_fixed_move_m": -13102.0064540957,
+      "same_clear_result": true
+    },
+    "edge:3096": {
+      "active_minus_fixed_time_s": -316.251157309669,
+      "active_minus_fixed_move_m": -1771.2557865483468,
+      "same_clear_result": true
+    },
+    "max_error:3096": {
+      "active_minus_fixed_time_s": -106.186513958879,
+      "active_minus_fixed_move_m": -690.9325697943859,
+      "same_clear_result": true
+    },
+    "min_radius:3096": {
+      "active_minus_fixed_time_s": -389.53031325099437,
+      "active_minus_fixed_move_m": -1967.6515662549864,
+      "same_clear_result": true
+    },
+    "uniform:3096": {
+      "active_minus_fixed_time_s": -110.08384460234993,
+      "active_minus_fixed_move_m": -685.4192230117405,
+      "same_clear_result": true
+    },
+    "clustered:3097": {
+      "active_minus_fixed_time_s": -1088.8158676216735,
+      "active_minus_fixed_move_m": -5659.079338108346,
+      "same_clear_result": true
+    },
+    "edge:3097": {
+      "active_minus_fixed_time_s": -548.2631211631533,
+      "active_minus_fixed_move_m": -3061.3156058157692,
+      "same_clear_result": true
+    },
+    "max_error:3097": {
+      "active_minus_fixed_time_s": 61.59943678745731,
+      "active_minus_fixed_move_m": -7.002816062718921,
+      "same_clear_result": true
+    },
+    "min_radius:3097": {
+      "active_minus_fixed_time_s": -280.3203635975897,
+      "active_minus_fixed_move_m": -1666.6018179879466,
+      "same_clear_result": true
+    },
+    "uniform:3097": {
+      "active_minus_fixed_time_s": 58.2338077931563,
+      "active_minus_fixed_move_m": 1.1690389657742344,
+      "same_clear_result": true
+    },
+    "clustered:3098": {
+      "active_minus_fixed_time_s": -1552.7629541857814,
+      "active_minus_fixed_move_m": -8088.814770928871,
+      "same_clear_result": true
+    },
+    "edge:3098": {
+      "active_minus_fixed_time_s": -155.66096990102233,
+      "active_minus_fixed_move_m": -1048.3048495051044,
+      "same_clear_result": true
+    },
+    "max_error:3098": {
+      "active_minus_fixed_time_s": -640.2050801754394,
+      "active_minus_fixed_move_m": -3556.025400877188,
+      "same_clear_result": true
+    },
+    "min_radius:3098": {
+      "active_minus_fixed_time_s": -325.4594133744613,
+      "active_minus_fixed_move_m": -1932.2970668722992,
+      "same_clear_result": true
+    },
+    "uniform:3098": {
+      "active_minus_fixed_time_s": -656.9468478570961,
+      "active_minus_fixed_move_m": -3614.7342392854625,
+      "same_clear_result": true
+    },
+    "clustered:3099": {
+      "active_minus_fixed_time_s": -577.1249148578099,
+      "active_minus_fixed_move_m": -3020.6245742890496,
+      "same_clear_result": true
+    },
+    "edge:3099": {
+      "active_minus_fixed_time_s": -10.406050783183673,
+      "active_minus_fixed_move_m": -237.03025391592018,
+      "same_clear_result": true
+    },
+    "max_error:3099": {
+      "active_minus_fixed_time_s": 73.83940549086401,
+      "active_minus_fixed_move_m": 189.19702745433824,
+      "same_clear_result": true
+    },
+    "min_radius:3099": {
+      "active_minus_fixed_time_s": -253.95849442890994,
+      "active_minus_fixed_move_m": -1424.7924721445488,
+      "same_clear_result": true
+    },
+    "uniform:3099": {
+      "active_minus_fixed_time_s": 78.05494708982587,
+      "active_minus_fixed_move_m": 210.274735449133,
+      "same_clear_result": true
+    }
+  }
+}

@@ -1,0 +1,1805 @@
+{
+  "rows": [
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6952.28204048646,
+      "avg": 695.2282040486459
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 8156.7932123187375,
+      "avg": 815.6793212318737
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6796.502950467296,
+      "avg": 679.6502950467295
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6794.446872246474,
+      "avg": 679.4446872246474
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7237.095380144209,
+      "avg": 723.7095380144209
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9691.877235705977,
+      "avg": 969.1877235705977
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7315.119691686154,
+      "avg": 731.5119691686153
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 7118.524806576114,
+      "avg": 711.8524806576114
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6678.060414167837,
+      "avg": 667.8060414167837
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9518.069148899662,
+      "avg": 951.8069148899662
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7051.727443911487,
+      "avg": 705.1727443911487
+    },
+    {
+      "profile": "uniform",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6838.854459911283,
+      "avg": 683.8854459911283
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 10038.154759442668,
+      "avg": 772.1657507263591
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 10592.851995441979,
+      "avg": 814.8347688801522
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 7880.617678598678,
+      "avg": 606.201359892206
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7775.690227347114,
+      "avg": 598.1300174882396
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 9021.07916660028,
+      "avg": 693.9291666615601
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 11348.735855696443,
+      "avg": 872.9796812074187
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8370.5054099816,
+      "avg": 643.8850315370462
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 8307.594903914438,
+      "avg": 639.0457618395722
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8129.727504590983,
+      "avg": 625.3636541993063
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 10394.759125666362,
+      "avg": 799.5968558204894
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8390.632496828237,
+      "avg": 645.4332689867874
+    },
+    {
+      "profile": "uniform",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 8234.943846759263,
+      "avg": 633.4572189814818
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 10783.880304048804,
+      "avg": 673.9925190030502
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 13303.60105875229,
+      "avg": 831.4750661720182
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9273.953540067858,
+      "avg": 579.6220962542411
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 9243.981368923147,
+      "avg": 577.7488355576967
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 10071.469210493673,
+      "avg": 629.4668256558546
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 12605.555430801422,
+      "avg": 787.8472144250889
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9747.937118789987,
+      "avg": 609.2460699243742
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 9214.992609569628,
+      "avg": 575.9370380981018
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9821.342046249294,
+      "avg": 613.8338778905809
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 11521.568847812961,
+      "avg": 720.0980529883101
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9433.906509913157,
+      "avg": 589.6191568695723
+    },
+    {
+      "profile": "uniform",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8431.773569645871,
+      "avg": 526.985848102867
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 8191.843194030349,
+      "avg": 819.1843194030349
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9274.798413116814,
+      "avg": 927.4798413116814
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7006.417999803103,
+      "avg": 700.6417999803103
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 7044.417999803103,
+      "avg": 704.4417999803103
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 8389.900947746779,
+      "avg": 838.9900947746779
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9554.432079890403,
+      "avg": 955.4432079890403
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7152.235286609169,
+      "avg": 715.2235286609168
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6935.867779594892,
+      "avg": 693.5867779594893
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 8548.550770509415,
+      "avg": 854.8550770509415
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 10867.450147212892,
+      "avg": 1086.7450147212892
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6835.527425469179,
+      "avg": 683.5527425469179
+    },
+    {
+      "profile": "edge",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6885.6747553584055,
+      "avg": 688.5674755358406
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 12195.600300495955,
+      "avg": 938.1231000381504
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 10917.352697556273,
+      "avg": 839.7963613504825
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8121.219113978652,
+      "avg": 624.7091626137425
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7686.207851128701,
+      "avg": 591.2467577791308
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 10217.206312804048,
+      "avg": 785.938947138773
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 11849.392993396548,
+      "avg": 911.4917687228115
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 7714.343062548635,
+      "avg": 593.4110048114335
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7702.21598996742,
+      "avg": 592.4781530744169
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 10906.68478432284,
+      "avg": 838.9757526402185
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 11458.096357542287,
+      "avg": 881.3920275032528
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8007.957922219531,
+      "avg": 615.9967632476562
+    },
+    {
+      "profile": "edge",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7803.332751304515,
+      "avg": 600.2563654849627
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 13177.8416827637,
+      "avg": 823.6151051727312
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 14955.751982054695,
+      "avg": 934.7344988784184
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9577.553224512914,
+      "avg": 598.5970765320571
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8665.249304166568,
+      "avg": 541.5780815104105
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 12515.587146861835,
+      "avg": 782.2241966788647
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 14279.936525526251,
+      "avg": 892.4960328453907
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9156.038268446628,
+      "avg": 572.2523917779142
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8890.411665338277,
+      "avg": 555.6507290836423
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 11001.356246349449,
+      "avg": 687.5847653968406
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 12634.359117781121,
+      "avg": 789.6474448613201
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9480.205133676634,
+      "avg": 592.5128208547897
+    },
+    {
+      "profile": "edge",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 7921.420365271801,
+      "avg": 495.08877282948754
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 4969.399134119879,
+      "avg": 496.9399134119879
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 7187.7404683322175,
+      "avg": 718.7740468332217
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6419.82005996541,
+      "avg": 641.982005996541
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 5940.582103621988,
+      "avg": 594.0582103621988
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 4992.989411040723,
+      "avg": 499.2989411040723
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6587.85122547947,
+      "avg": 658.7851225479469
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6782.346273426069,
+      "avg": 678.2346273426069
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6033.710608909085,
+      "avg": 603.3710608909084
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 4928.495892072424,
+      "avg": 492.8495892072424
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6904.1040766129345,
+      "avg": 690.4104076612934
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6827.794353688889,
+      "avg": 682.7794353688889
+    },
+    {
+      "profile": "clustered",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6189.767757740957,
+      "avg": 618.9767757740957
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 6395.97342025116,
+      "avg": 491.9979554039354
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 8084.665410452914,
+      "avg": 621.8973392656088
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 7455.005501114327,
+      "avg": 573.461961624179
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 6992.533358620711,
+      "avg": 537.8871814323624
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 6044.98113215716,
+      "avg": 464.99854862747384
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7752.634122987349,
+      "avg": 596.3564709990268
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8124.115865468148,
+      "avg": 624.931989651396
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7082.796131085984,
+      "avg": 544.8304716219988
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 5811.499552800943,
+      "avg": 447.0384271385341
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 8184.759143408282,
+      "avg": 629.5968571852525
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8366.931368304993,
+      "avg": 643.6101052542302
+    },
+    {
+      "profile": "clustered",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 6933.646202876067,
+      "avg": 533.3574002212359
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 6672.776327122482,
+      "avg": 417.04852044515513
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 7843.859240804352,
+      "avg": 490.241202550272
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9175.91107870885,
+      "avg": 573.4944424193031
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 5245.0580477346875,
+      "avg": 327.81612798341797
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 6694.913490807321,
+      "avg": 418.43209317545757
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8806.205825724996,
+      "avg": 550.3878641078122
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9956.704780613545,
+      "avg": 622.2940487883466
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 6016.360816685693,
+      "avg": 376.0225510428558
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 7520.63264211281,
+      "avg": 470.0395401320506
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8432.45958900258,
+      "avg": 527.0287243126612
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 8333.589835060464,
+      "avg": 520.849364691279
+    },
+    {
+      "profile": "clustered",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 5654.152151703423,
+      "avg": 353.38450948146397
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6212.746780752737,
+      "avg": 621.2746780752738
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 8500.305084849066,
+      "avg": 850.0305084849066
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6779.610426779545,
+      "avg": 677.9610426779545
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6738.750130727389,
+      "avg": 673.8750130727389
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 8180.711036652064,
+      "avg": 818.0711036652064
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9627.599729303898,
+      "avg": 962.7599729303898
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6900.829974264979,
+      "avg": 690.0829974264979
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6885.657922061014,
+      "avg": 688.5657922061014
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7644.004417390606,
+      "avg": 764.4004417390606
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9080.519984565164,
+      "avg": 908.0519984565165
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6820.111023920209,
+      "avg": 682.0111023920209
+    },
+    {
+      "profile": "min_radius",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6495.218261472062,
+      "avg": 649.5218261472062
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 9360.352295456069,
+      "avg": 720.0270996504668
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 11448.798131531308,
+      "avg": 880.6767793485621
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8020.006630866106,
+      "avg": 616.9235869897004
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7835.814828998557,
+      "avg": 602.7549868460428
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 10479.696648195191,
+      "avg": 806.1305113996301
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 11338.072646996028,
+      "avg": 872.1594343843099
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 7921.979285043046,
+      "avg": 609.3830219263881
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7722.990240497161,
+      "avg": 594.0761723459354
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8898.811777006827,
+      "avg": 684.523982846679
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 11172.814858706613,
+      "avg": 859.4472968235857
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8129.829294775002,
+      "avg": 625.3714842134617
+    },
+    {
+      "profile": "min_radius",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7586.95256199166,
+      "avg": 583.61173553782
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 10604.719006743948,
+      "avg": 662.7949379214967
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 13635.009406007586,
+      "avg": 852.1880878754741
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9447.908185378403,
+      "avg": 590.4942615861502
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 9254.978797087055,
+      "avg": 578.4361748179409
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 10718.06400356201,
+      "avg": 669.8790002226257
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 12150.766785894393,
+      "avg": 759.4229241183996
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9048.209914112822,
+      "avg": 565.5131196320514
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8753.020369603439,
+      "avg": 547.0637731002149
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 10212.594064661642,
+      "avg": 638.2871290413526
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 12159.03339769046,
+      "avg": 759.9395873556538
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9009.986103061006,
+      "avg": 563.1241314413129
+    },
+    {
+      "profile": "min_radius",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8688.167477257668,
+      "avg": 543.0104673286042
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6957.1612193420815,
+      "avg": 695.7161219342081
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 8157.022175239965,
+      "avg": 815.7022175239965
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6796.396700790156,
+      "avg": 679.6396700790156
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6794.303710224139,
+      "avg": 679.4303710224139
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7250.512800159638,
+      "avg": 725.0512800159638
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9713.962849641164,
+      "avg": 971.3962849641164
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7315.275568149743,
+      "avg": 731.5275568149743
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 7124.004093156333,
+      "avg": 712.4004093156333
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 6682.861581578224,
+      "avg": 668.2861581578225
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 10,
+      "success": true,
+      "time": 9373.057342466069,
+      "avg": 937.3057342466069
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 10,
+      "success": true,
+      "time": 7051.519194338167,
+      "avg": 705.1519194338167
+    },
+    {
+      "profile": "max_error",
+      "count": 10,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 10,
+      "success": true,
+      "time": 6835.513178554502,
+      "avg": 683.5513178554502
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 10064.265580005504,
+      "avg": 774.1742753850388
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 10607.238958936607,
+      "avg": 815.941458379739
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 7889.564473579349,
+      "avg": 606.8895748907191
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 7787.483943615441,
+      "avg": 599.0372264319569
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 9040.116721102042,
+      "avg": 695.3935939309263
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 11360.014251588998,
+      "avg": 873.8472501222307
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8370.495654475735,
+      "avg": 643.8842811135181
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 8308.431041285181,
+      "avg": 639.1100800988601
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8134.44378032704,
+      "avg": 625.7264446405416
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 13,
+      "success": true,
+      "time": 10393.857114747876,
+      "avg": 799.5274703652212
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 13,
+      "success": true,
+      "time": 8391.146228975622,
+      "avg": 645.4727868442786
+    },
+    {
+      "profile": "max_error",
+      "count": 13,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 13,
+      "success": true,
+      "time": 8229.330824712395,
+      "avg": 633.0254480547997
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 10776.303056766626,
+      "avg": 673.5189410479142
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 13299.468927124142,
+      "avg": 831.2168079452589
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9274.781852940923,
+      "avg": 579.6738658088077
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61001,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 9246.048122218494,
+      "avg": 577.8780076386558
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 10061.814361624665,
+      "avg": 628.8633976015416
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 13121.661193474756,
+      "avg": 820.1038245921723
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9747.73362906998,
+      "avg": 609.2333518168738
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61002,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 9213.70141430737,
+      "avg": 575.8563383942106
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9816.288353885342,
+      "avg": 613.5180221178339
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "C_active",
+      "cleared": 16,
+      "success": true,
+      "time": 11815.06921011215,
+      "avg": 738.4418256320093
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_fixed",
+      "cleared": 16,
+      "success": true,
+      "time": 9428.45108647382,
+      "avg": 589.2781929046138
+    },
+    {
+      "profile": "max_error",
+      "count": 16,
+      "seed": 61003,
+      "strategy": "B_active",
+      "cleared": 16,
+      "success": true,
+      "time": 8416.515622031742,
+      "avg": 526.0322263769839
+    }
+  ],
+  "wall_seconds": 2.1125414999987697
+}
