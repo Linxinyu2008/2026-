@@ -1,0 +1,37 @@
+{
+  "completed": true,
+  "termination_reason": "completed",
+  "action_count": 418,
+  "virtual_time_s": 15200.455926677827,
+  "move_distance_m": 63822.27963338918,
+  "measure_count": 397,
+  "switch_count": 368,
+  "clear_success_count": 10,
+  "clear_failure_count": 11,
+  "cleared_channels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "absent_channels": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "unresolved_channels": [],
+  "global_grid_points": 31
+}

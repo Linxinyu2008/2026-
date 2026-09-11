@@ -1,6 +1,6 @@
 # B题代码工作区
 
-这里统一存放 B 题前三个问题的代码，目录按题目小问和问题3路线划分。
+这里统一存放 B 题各小问的代码，目录按题目小问和问题3/问题4路线划分。
 
 ```text
 B题问_代码/
@@ -11,11 +11,13 @@ B题问_代码/
 │  ├─ route_b/            路线B策略
 │  ├─ route_c/            路线C策略
 │  └─ tests_q3/           第三问测试
+├─ q4_directional/        第四问：定向源三角网格保证搜索
+│  └─ tests/              第四问本地单元与端到端测试
 ├─ configs/               配置文件
 └─ outputs/               本地实验输出
 ```
 
-第一问和第二问是几何基础模块；第三问公共层和两条路线在此基础上继续扩展，不复制相同的定位算法。
+第一问和第二问是几何基础模块；第三问公共层和两条路线在此基础上继续扩展。第四问使用独立的定向源策略模块，同时复用已经验证的接口和基础数据结构，不复制第三问策略。
 
 ## 运行入口
 
@@ -24,4 +26,6 @@ python -m q1_localization.localization_region
 python -m unittest q2_second_detection.test_second_detection_point -v
 python -m unittest discover -s q3_common/tests_q3 -v
 python -m q3_common.route_b.run --seed 42 --targets 10
+python -m unittest discover -s q4_directional/tests -v
+python -m q4_directional.run --backend local --seed 0
 ```
