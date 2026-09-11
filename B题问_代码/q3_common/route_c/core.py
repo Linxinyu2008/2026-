@@ -29,6 +29,8 @@ class RouteCConfig:
     clear_reward: float = 20.0
     repeated_scan_penalty: float = 0.5
     invalid_action_penalty: float = 10.0
+    defer_localization_until_discovery_complete: bool = False
+    nearest_scan_point: bool = True
 
 
 @dataclass(frozen=True)
@@ -156,7 +158,13 @@ class RouteCEnv:
     def _refresh_candidates(self) -> None:
         assert self.simulator is not None and self.belief is not None
         robot = RobotState(self.simulator.position, self.simulator.current_channel)
-        self._candidates = tuple(build_candidates(self.belief, robot, self.rules))
+        self._candidates = tuple(build_candidates(
+            self.belief,
+            robot,
+            self.rules,
+            defer_localization_until_discovery_complete=self.config.defer_localization_until_discovery_complete,
+            nearest_scan_point=self.config.nearest_scan_point,
+        ))
         self._candidate_version += 1
 
     def _execute(self, action: ActionSpec) -> None:

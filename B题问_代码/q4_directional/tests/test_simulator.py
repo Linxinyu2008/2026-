@@ -24,6 +24,18 @@ class DirectionalSimulatorTests(unittest.TestCase):
 
         self.assertEqual(simulator.measure((0.0, 100.0), 1).signal, "BEARING")
 
+    def test_directional_source_backside_within_five_metres_is_not_near(self):
+        scenario = Scenario.single(1, (0.0, 0.0), 1000.0, 0.0)
+        simulator = DirectionalSimulator(scenario)
+
+        self.assertEqual(simulator.measure((-1.0, 0.0), 1).signal, "NONE")
+
+    def test_directional_source_frontside_within_five_metres_is_near(self):
+        scenario = Scenario.single(1, (0.0, 0.0), 1000.0, 0.0)
+        simulator = DirectionalSimulator(scenario)
+
+        self.assertEqual(simulator.measure((1.0, 0.0), 1).signal, "NEAR")
+
     def test_clear_works_inside_twenty_metres_even_when_direction_is_backwards(self):
         scenario = Scenario.single(1, (0.0, 0.0), 1000.0, 0.0)
         simulator = DirectionalSimulator(scenario)

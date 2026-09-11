@@ -102,6 +102,57 @@ def grid_for_region(region: Region, spacing_m: float) -> Grid:
     return _build(region, spacing_m)
 
 
+def nearest_neighbor_order(grid: Grid, start: Point = (0.0, 0.0)) -> Grid:
+    """保留全部三角网格点，只改变访问顺序以减少移动距离。
+
+    全局扫描的覆盖集合不变，因此不会改变可证明的覆盖范围；从机器狗
+    初始位置开始，每一步选择最近的未访问点，作为比逐行蛇形更短的确定性路线。
+    """
+    remaining = list(grid.points)
+    ordered: list[Point] = []
+    position = start
+    while remaining:
+        point = min(
+            remaining,
+            key=lambda candidate: (
+                hypot(candidate[0] - position[0], candidate[1] - position[1]),
+                candidate[1],
+                candidate[0],
+            ),
+        )
+        ordered.append(point)
+        remaining.remove(point)
+        position = point
+    return Grid(grid.spacing_m, grid.triangles, tuple(ordered))
+
+
+def two_opt_order(grid: Grid, start: Point = (0.0, 0.0), max_passes: int = 4) -> Grid:
+    """在最近邻路线基础上做有限次 2-opt，保持点集不变并缩短开放路径。"""
+    if max_passes < 0:
+        raise ValueError("max_passes必须非负")
+    route = list(nearest_neighbor_order(grid, start).points)
+
+    def distance(a: Point, b: Point) -> float:
+        return hypot(a[0] - b[0], a[1] - b[1])
+
+    for _ in range(max_passes):
+        improved = False
+        for i in range(len(route) - 2):
+            left = start if i == 0 else route[i - 1]
+            a = route[i]
+            for j in range(i + 1, len(route) - 1):
+                b = route[j]
+                right = route[j + 1]
+                old = distance(left, a) + distance(b, right)
+                new = distance(left, b) + distance(a, right)
+                if new + 1e-9 < old:
+                    route[i : j + 1] = reversed(route[i : j + 1])
+                    improved = True
+        if not improved:
+            break
+    return Grid(grid.spacing_m, grid.triangles, tuple(route))
+
+
 def optical_cover(region: Region, spacing_m: float = 30.0) -> tuple[Point, ...]:
     """返回相交细网格的全部顶点，满足 h/sqrt(3) <= 20 米的覆盖构造。"""
     return _build(region, spacing_m).points

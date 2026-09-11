@@ -77,7 +77,13 @@ class OfficialRouteCController:
 
     def _candidates(self) -> tuple[Candidate, ...]:
         robot = RobotState(self.position, self.current_channel)
-        return tuple(build_candidates(self.belief, robot, self.rules))
+        return tuple(build_candidates(
+            self.belief,
+            robot,
+            self.rules,
+            defer_localization_until_discovery_complete=self.config.defer_localization_until_discovery_complete,
+            nearest_scan_point=self.config.nearest_scan_point,
+        ))
 
     def _observation(self, candidates: tuple[Candidate, ...]) -> dict[str, Any]:
         tracks = {}
@@ -246,7 +252,14 @@ def main() -> None:
     payload = asdict(controller.run())
     output_dir = args.output / datetime.now().strftime("%Y%m%d_%H%M%S")
     output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "official_run_report.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    report_path = output_dir / "official_run_report.json"
+    client = controller.client
+    log_path = output_dir / "behavior_log.jsonl"
+    with log_path.open("w", encoding="utf-8") as handle:
+        for record in client.request_log:
+            handle.write(json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n")
+    payload["behavior_log_path"] = str(log_path)
+    report_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(payload, ensure_ascii=False, indent=2))
 
 

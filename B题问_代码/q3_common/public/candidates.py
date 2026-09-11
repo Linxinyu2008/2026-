@@ -39,8 +39,12 @@ def estimate_time(action: ActionSpec, robot: RobotState, rules: Rules = Rules())
     return seconds
 
 
-def _next_coverage_task(belief: BeliefTracker) -> tuple[int, Point, tuple[int, ...]] | None:
+def _next_coverage_task(
+    belief: BeliefTracker,
+    robot: RobotState | None = None,
+) -> tuple[int, Point, tuple[int, ...]] | None:
     points = coverage_points()
+    tasks = []
     for point_id, point in enumerate(points):
         channels = tuple(
             channel for channel in range(1, 21)
@@ -48,7 +52,11 @@ def _next_coverage_task(belief: BeliefTracker) -> tuple[int, Point, tuple[int, .
             and point_id not in belief.tracks[channel].coverage_checked
         )
         if channels:
-            return point_id, point, channels
+            distance = 0.0 if robot is None else hypot(point[0] - robot.position[0], point[1] - robot.position[1])
+            tasks.append((distance, point_id, point, channels))
+    if tasks:
+        _, point_id, point, channels = min(tasks, key=lambda item: (item[0], item[1]))
+        return point_id, point, channels
     return None
 
 
@@ -58,6 +66,8 @@ def build_candidates(
     rules: Rules = Rules(),
     *,
     max_candidates: int = 12,
+    defer_localization_until_discovery_complete: bool = False,
+    nearest_scan_point: bool = False,
 ) -> list[Candidate]:
     """按固定槽位生成公开候选，不读取场景真值。
 
@@ -67,11 +77,14 @@ def build_candidates(
     if max_candidates != 12:
         raise ValueError("首版候选接口固定为12个槽位")
     candidates: list[Candidate] = []
-    scan_task = _next_coverage_task(belief)
+    scan_task = _next_coverage_task(belief, robot if nearest_scan_point else None)
     if scan_task:
         point_id, point, channels = scan_task
+        # 将待测频道按连续区间分组，减少发现阶段在频道编号上的往返切换。
+        # 每个频道仍恰好检测一次，动作数量和公开候选槽位不变。
+        chunk_size = max(1, (len(channels) + 3) // 4)
         for offset in range(4):
-            selected = channels[offset::4]
+            selected = channels[offset * chunk_size : (offset + 1) * chunk_size]
             if not selected:
                 candidates.append(Candidate(None, 0.0, 0.0, 0.0, False, False))
                 continue
@@ -80,7 +93,7 @@ def build_candidates(
     while len(candidates) < 4:
         candidates.append(Candidate(None, 0.0, 0.0, 0.0, False, False))
 
-    local_tracks = [
+    local_tracks = [] if (defer_localization_until_discovery_complete and scan_task is not None) else [
         (channel, track) for channel, track in belief.tracks.items()
         if track.status == "TRACKING" and track.bearings and track.last_point is not None and track.distance_upper_bound_m
     ]

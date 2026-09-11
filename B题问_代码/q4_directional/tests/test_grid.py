@@ -2,10 +2,16 @@ import math
 import unittest
 
 from q4_directional.geometry import initial_region
-from q4_directional.triangular_grid import grid_for_region, optical_cover
+from q4_directional.triangular_grid import grid_for_region, nearest_neighbor_order, optical_cover
 
 
 class TriangularGridTests(unittest.TestCase):
+    def test_nearest_route_preserves_all_scan_points(self):
+        grid = grid_for_region(initial_region(), 950.0)
+        routed = nearest_neighbor_order(grid)
+        self.assertEqual(set(routed.points), set(grid.points))
+        self.assertEqual(len(routed.points), len(grid.points))
+
     def test_intersecting_cells_keep_exterior_vertices(self):
         region = initial_region(1800.0, sides=64)
         grid = grid_for_region(region, 950.0)

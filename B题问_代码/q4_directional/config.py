@@ -21,6 +21,7 @@ class Rules:
 class Config:
     rules: Rules = Rules()
     global_spacing_m: float = 950.0
+    global_route: str = "two_opt"
     optical_spacing_m: float = 30.0
     angle_margin_deg: float = 1.005
     max_local_measurements: int = 8
@@ -34,5 +35,7 @@ class Config:
             raise ValueError("optical_spacing_m不满足三角网格20米覆盖条件")
         if self.max_local_measurements <= 0 or self.no_progress_window <= 0:
             raise ValueError("局部尝试上限必须为正整数")
+        if self.global_route not in {"two_opt", "nearest", "snake"}:
+            raise ValueError("global_route必须为two_opt、nearest或snake")
         if not 0.0 <= self.progress_ratio < 1.0:
             raise ValueError("progress_ratio必须位于[0,1)")

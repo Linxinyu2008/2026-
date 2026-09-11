@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from functools import lru_cache
 from math import cos, pi, sin
 
 from .models import ClearResult, Measurement
 from .geometry import region_summary
 
 
+@lru_cache(maxsize=1)
 def coverage_points() -> tuple[tuple[float, float], ...]:
     return ((0.0, 0.0),) + tuple(
         (1500.0 * cos(k * pi / 3.0), 1500.0 * sin(k * pi / 3.0)) for k in range(6)

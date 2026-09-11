@@ -33,6 +33,10 @@ class OfficialSimulatorClient:
         self.retries = int(retries)
         self.session: OfficialSession | None = None
         self._request_counter = 0
+        self.http_request_count = 0
+        self.retry_count = 0
+        # 按附件要求保留完整的请求/响应轨迹，供演练复盘和提交材料整理使用。
+        self.request_log: list[dict[str, Any]] = []
 
     def _request_id(self, prefix: str) -> str:
         self._request_counter += 1
@@ -50,15 +54,39 @@ class OfficialSimulatorClient:
             method="POST",
         )
         last_error: Exception | None = None
-        for _ in range(self.retries + 1):
+        for attempt in range(self.retries + 1):
+            started = time.monotonic()
             try:
+                self.http_request_count += 1
+                if attempt:
+                    self.retry_count += 1
                 with urlopen(request, timeout=self.timeout_s) as response:
                     result = json.loads(response.read().decode("utf-8"))
                 if not isinstance(result, dict):
                     raise OfficialClientError("官方响应不是JSON对象")
+                self.request_log.append({
+                    "sequence": self.http_request_count,
+                    "path": path,
+                    "request_id": payload.get("request_id"),
+                    "attempt": attempt + 1,
+                    "payload": payload,
+                    "response": result,
+                    "error": None,
+                    "elapsed_wall_s": time.monotonic() - started,
+                })
                 return result
             except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError, OfficialClientError) as exc:
                 last_error = exc
+                self.request_log.append({
+                    "sequence": self.http_request_count,
+                    "path": path,
+                    "request_id": payload.get("request_id"),
+                    "attempt": attempt + 1,
+                    "payload": payload,
+                    "response": None,
+                    "error": f"{type(exc).__name__}: {exc}",
+                    "elapsed_wall_s": time.monotonic() - started,
+                })
                 time.sleep(0.05)
         raise OfficialClientError(f"请求{path}失败，已用同一request_id重试: {last_error}")
 

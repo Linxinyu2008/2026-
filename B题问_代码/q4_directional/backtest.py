@@ -17,6 +17,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--seeds", default="0:4", help="闭区间种子，例如0:4")
     parser.add_argument("--output", type=Path, default=Path("outputs/q4_directional/baseline.csv"))
     parser.add_argument("--global-spacing", type=float, default=950.0)
+    parser.add_argument("--global-route", choices=("two_opt", "nearest", "snake"), default="two_opt")
     parser.add_argument("--optical-spacing", type=float, default=30.0)
     parser.add_argument("--max-local-measurements", type=int, default=8)
     parser.add_argument("--no-progress-window", type=int, default=4)
@@ -28,6 +29,7 @@ def main(argv: list[str] | None = None) -> int:
         for seed in range(start, end + 1):
             config = Config(
                 global_spacing_m=args.global_spacing,
+                global_route=args.global_route,
                 optical_spacing_m=args.optical_spacing,
                 max_local_measurements=args.max_local_measurements,
                 no_progress_window=args.no_progress_window,
@@ -36,6 +38,7 @@ def main(argv: list[str] | None = None) -> int:
             row = {
                 "seed": seed,
                 "global_spacing_m": args.global_spacing,
+                "global_route": args.global_route,
                 "optical_spacing_m": args.optical_spacing,
                 "max_local_measurements": args.max_local_measurements,
                 "no_progress_window": args.no_progress_window,

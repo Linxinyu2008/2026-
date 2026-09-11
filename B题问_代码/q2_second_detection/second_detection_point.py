@@ -14,11 +14,19 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from itertools import combinations
 from math import atan2, cos, degrees, hypot, inf, nextafter, pi, sin, sqrt
 from random import Random
 from typing import Iterable, Sequence
 
-from q1_localization.localization_region import Point, solve_localization_region
+from q1_localization.localization_region import (
+    Point,
+    _has_recession_direction,
+    _line_intersection,
+    _satisfies,
+    build_halfplanes,
+    solve_localization_region,
+)
 
 
 @dataclass(frozen=True)
@@ -176,6 +184,32 @@ def _mean_and_quantile(values: Sequence[float], q: float) -> float:
     return ordered[index]
 
 
+def _two_bearing_diameter(
+    station1: Point,
+    bearing1_deg: float,
+    station2: Point,
+    bearing2_deg: float,
+    epsilon_deg: float,
+) -> float:
+    """两次示向约束的快速直径计算。
+
+    第二问只需要定位区域直径，不需要面积、凸包顺序或最小覆盖圆。
+    四条半平面边界至多产生六个交点，直接筛选可行顶点即可；这与通用
+    求解器的几何结果一致，但避免了重复构造凸包和覆盖圆。
+    """
+    halfplanes = build_halfplanes(
+        [station1, station2], [bearing1_deg, bearing2_deg], epsilon_deg
+    )
+    candidates: list[Point] = []
+    for first, second in combinations(halfplanes, 2):
+        point = _line_intersection(first, second)
+        if point is not None and _satisfies(point, halfplanes, 1e-7):
+            candidates.append(point)
+    if len(candidates) < 2 or _has_recession_direction(halfplanes, 1e-10):
+        return float("inf")
+    return max(_distance(a, b) for a, b in combinations(candidates, 2))
+
+
 def worst_case_diameter(
     station1: Point,
     bearing1_deg: float,
@@ -184,6 +218,7 @@ def worst_case_diameter(
     *,
     epsilon_deg: float = 1.0,
     error_samples: Iterable[float] = (-1.0, -0.5, 0.0, 0.5, 1.0),
+    fast_two_station: bool = True,
 ) -> float:
     """用粒子和误差网格近似第二次观测后的最坏定位区域直径。"""
     diameters: list[float] = []
@@ -191,14 +226,21 @@ def worst_case_diameter(
         true_bearing = degrees(atan2(particle.point[1] - station2[1], particle.point[0] - station2[0])) % 360.0
         for error in error_samples:
             observed = (true_bearing + error) % 360.0
-            result = solve_localization_region(
-                [station1, station2], [bearing1_deg, observed], epsilon_deg
-            )
-            if result["status"] == "OK":
-                diameters.append(float(result["diameter"]))
+            if fast_two_station:
+                diameters.append(
+                    _two_bearing_diameter(
+                        station1, bearing1_deg, station2, observed, epsilon_deg
+                    )
+                )
             else:
-                # 退化或无界代表不可接受的观测几何。
-                diameters.append(float("inf"))
+                result = solve_localization_region(
+                    [station1, station2], [bearing1_deg, observed], epsilon_deg
+                )
+                if result["status"] == "OK":
+                    diameters.append(float(result["diameter"]))
+                else:
+                    # 退化或无界代表不可接受的观测几何。
+                    diameters.append(float("inf"))
     return max(diameters) if diameters else float("inf")
 
 

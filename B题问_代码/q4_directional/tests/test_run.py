@@ -24,6 +24,19 @@ class RunScenarioTests(unittest.TestCase):
         self.assertFalse(result["completed"])
         self.assertEqual(result["termination_reason"], "max_actions")
 
+    def test_run_backend_reports_backend_failure_without_throwing(self):
+        class FailingBackend:
+            position = (0.0, 0.0)
+            current_channel = 1
+
+            def measure(self, point, channel):
+                raise RuntimeError("simulated transport failure")
+
+        result = run_backend(FailingBackend(), Config(), max_actions=1)
+
+        self.assertFalse(result["completed"])
+        self.assertIn("simulated transport failure", result["termination_reason"])
+
 
 if __name__ == "__main__":
     unittest.main()

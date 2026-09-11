@@ -216,6 +216,14 @@ def minimum_enclosing_circle(vertices: Sequence[Point]) -> tuple[Point, float]:
     points = list(vertices)
     if not points:
         raise ValueError("空点集没有最小覆盖圆")
+
+    # 若直径圆已经覆盖全部顶点，它就是有限点集的最小覆盖圆（Thales 判据）。
+    # 这条快速路径对典型四边形/六边形区域可以跳过 O(n^3) 的三点枚举。
+    if len(points) >= 2:
+        diameter, a, b = polygon_diameter(points)
+        if diameter_circle_covers(points, (a, b)):
+            return ((a[0] + b[0]) / 2.0, (a[1] + b[1]) / 2.0), diameter / 2.0
+
     candidates: list[tuple[Point, float]] = [((points[0][0], points[0][1]), 0.0)]
     candidates.extend(_circle_from_two(a, b) for a, b in combinations(points, 2))
     for a, b, c in combinations(points, 3):
