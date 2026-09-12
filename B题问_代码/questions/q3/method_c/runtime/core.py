@@ -16,7 +16,7 @@ from questions.q3.shared.local_search import is_clearable, next_upper_bound
 from questions.q3.shared.models import ActionSpec, RobotState
 from questions.q3.shared.scenario import Scenario, generate_scenario
 from questions.q3.shared.simulator import LocalSimulator
-from questions.q3.method_c.framework_v2 import build_framework_candidates
+from questions.q3.method_c.framework_v2.framework_v2 import build_framework_candidates
 
 
 @dataclass(frozen=True)

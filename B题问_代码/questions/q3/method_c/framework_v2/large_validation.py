@@ -12,10 +12,10 @@ from pathlib import Path
 from statistics import mean, median
 from typing import Any, Callable
 
-from questions.q3.method_c.backtest import run_episode
-from questions.q3.method_c.core import RouteCConfig, RouteCEnv
-from questions.q3.method_c.framework_v2 import choose_framework_v2
-from questions.q3.method_c.hybrid import choose_hybrid
+from questions.q3.method_c.runtime.backtest import run_episode
+from questions.q3.method_c.runtime.core import RouteCConfig, RouteCEnv
+from questions.q3.method_c.framework_v2.framework_v2 import choose_framework_v2
+from questions.q3.method_c.hybrid.hybrid import choose_hybrid
 
 
 Selector = Callable[[RouteCEnv, Any], int]

@@ -3,12 +3,12 @@ from math import cos, hypot, pi, sin
 
 from questions.q3.shared.coverage import BeliefTracker
 from questions.q3.shared.models import Measurement, RobotState
-from questions.q3.method_c.framework_v2 import (
+from questions.q3.method_c.framework_v2.framework_v2 import (
     build_framework_candidates,
     choose_framework_v2,
     framework_coverage_points,
 )
-from questions.q3.method_c.official_controller import OfficialRouteCController
+from questions.q3.method_c.runtime.official_controller import OfficialRouteCController
 
 
 class FrameworkV2Tests(unittest.TestCase):

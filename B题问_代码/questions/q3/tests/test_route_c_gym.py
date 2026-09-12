@@ -2,8 +2,8 @@ import unittest
 
 import numpy as np
 
-from questions.q3.method_c.core import RouteCConfig
-from questions.q3.method_c.env import GymRouteCEnv
+from questions.q3.method_c.runtime.core import RouteCConfig
+from questions.q3.method_c.runtime.env import GymRouteCEnv
 
 
 class RouteCGymTests(unittest.TestCase):

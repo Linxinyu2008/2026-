@@ -21,8 +21,8 @@ B题问_代码/
 
 ## 实施顺序
 
-1. 先在 `questions/q3/public` 完成规则、固定误差场、虚拟计时和连续局部收缩定位。
-2. 再在 `questions/q3/route_b` 完成七点覆盖、候选生成和路线B入口。
-3. 路线B稳定后，才在 `questions/q3/route_c` 增加 Gymnasium 环境、动作掩码和 MaskablePPO。
+1. 先在 `questions/q3/shared` 完成规则、固定误差场、虚拟计时和连续局部收缩定位。
+2. 再在 `questions/q3/method_b` 完成七点覆盖、候选生成和路线B入口。
+3. 路线B稳定后，在 `questions/q3/method_c` 下分别维护 `runtime`、`hybrid`、`ppo` 和 `framework_v2`。
 
 路线B不依赖 PyTorch。路线C训练前必须先通过路线B的公共环境测试。

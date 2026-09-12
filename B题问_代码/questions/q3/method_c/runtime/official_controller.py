@@ -20,10 +20,10 @@ from questions.q3.shared.coverage import BeliefTracker
 from questions.q3.shared.local_search import is_clearable, next_upper_bound
 from questions.q3.shared.models import ClearResult, Measurement, RobotState
 from questions.q3.shared.official_client import OfficialClientError, OfficialSimulatorClient
-from questions.q3.method_c.core import RouteCConfig
-from questions.q3.method_c.features import encode_observation
-from questions.q3.method_c.framework_v2 import build_framework_candidates, choose_framework_v2
-from questions.q3.method_c.hybrid import choose_hybrid
+from questions.q3.method_c.runtime.core import RouteCConfig
+from questions.q3.method_c.runtime.features import encode_observation
+from questions.q3.method_c.framework_v2.framework_v2 import build_framework_candidates, choose_framework_v2
+from questions.q3.method_c.hybrid.hybrid import choose_hybrid
 
 
 @dataclass(frozen=True)

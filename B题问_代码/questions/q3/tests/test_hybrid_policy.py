@@ -2,7 +2,7 @@ import unittest
 
 from questions.q3.shared.models import ActionSpec
 from questions.q3.shared.candidates import Candidate
-from questions.q3.method_c.hybrid import choose_hybrid
+from questions.q3.method_c.hybrid.hybrid import choose_hybrid
 
 
 class FakeEnv:

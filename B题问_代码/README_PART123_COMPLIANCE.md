@@ -86,7 +86,7 @@ conda run -n data_env python -m questions.q2.backtest --episodes 20
 第三问主控制器：
 
 ```powershell
-conda run -n data_env python -m questions.q3.method_c.controller --model outputs/route_c/20260911_043624/model.zip --seed 30001 --targets 16 --profile mixed
+conda run -n data_env python -m questions.q3.method_c.runtime.controller --model outputs/route_c/20260911_043624/model.zip --seed 30001 --targets 16 --profile mixed
 ```
 
 ## 四、当前本地回测结果解释
@@ -120,7 +120,7 @@ conda run -n data_env python part123_backtest.py --episodes 10 --targets 16 --pr
 官方模拟器已启动并登录后，才运行真实控制器：
 
 ```powershell
-conda run --no-capture-output -n data_env python -m questions.q3.method_c.official_controller --robot-id "你的参赛队号" --model outputs/route_c/<新模型目录>/model.zip
+conda run --no-capture-output -n data_env python -m questions.q3.method_c.runtime.official_controller --robot-id "你的参赛队号" --model outputs/route_c/<新模型目录>/model.zip
 ```
 
 本命令会实际调用官方接口；未启动模拟器时不要运行，运行报告会保存到 `outputs/route_c/official/`。

@@ -1,7 +1,7 @@
 import unittest
 
-from questions.q3.method_c.core import RouteCConfig, RouteCEnv
-from questions.q3.method_c.features import FeatureSchema, encode_observation
+from questions.q3.method_c.runtime.core import RouteCConfig, RouteCEnv
+from questions.q3.method_c.runtime.features import FeatureSchema, encode_observation
 
 
 class RouteCFeatureTests(unittest.TestCase):

@@ -12,8 +12,8 @@ from pathlib import Path
 
 from sb3_contrib import MaskablePPO
 
-from questions.q3.method_c.core import RouteCConfig
-from questions.q3.method_c.env import GymRouteCEnv
+from questions.q3.method_c.runtime.core import RouteCConfig
+from questions.q3.method_c.runtime.env import GymRouteCEnv
 
 
 def build_model(env: GymRouteCEnv, seed: int, tensorboard_log: str | None = None) -> MaskablePPO:

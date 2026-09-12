@@ -3,7 +3,7 @@ import unittest
 from questions.q3.shared.config import Rules
 from questions.q3.shared.models import ActionSpec
 from questions.q3.shared.scenario import SpatialErrorField, generate_scenario
-from questions.q3.method_c.core import RouteCConfig, RouteCEnv
+from questions.q3.method_c.runtime.core import RouteCConfig, RouteCEnv
 
 
 class RouteCCoreTests(unittest.TestCase):

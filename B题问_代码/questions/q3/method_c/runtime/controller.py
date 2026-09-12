@@ -13,8 +13,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from questions.q3.method_c.core import EpisodeReport, RouteCConfig
-from questions.q3.method_c.env import GymRouteCEnv
+from questions.q3.method_c.runtime.core import EpisodeReport, RouteCConfig
+from questions.q3.method_c.runtime.env import GymRouteCEnv
 
 
 @dataclass(frozen=True)

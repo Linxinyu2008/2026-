@@ -11,8 +11,8 @@ import gymnasium as gym
 import numpy as np
 from gymnasium import spaces
 
-from questions.q3.method_c.core import RouteCConfig, RouteCEnv
-from questions.q3.method_c.features import FeatureSchema, encode_observation
+from questions.q3.method_c.runtime.core import RouteCConfig, RouteCEnv
+from questions.q3.method_c.runtime.features import FeatureSchema, encode_observation
 
 
 class GymRouteCEnv(gym.Env[np.ndarray, np.int64]):
