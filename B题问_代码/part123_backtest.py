@@ -6,11 +6,11 @@ import argparse
 import json
 from pathlib import Path
 
-from q1_localization.backtest import run_backtest as run_q1
-from q2_second_detection.backtest import run_backtest as run_q2
-from q3_common.route_c.backtest import run_backtest as run_q3
-from q3_common.route_c.core import RouteCConfig
-from q3_common.route_c.backtest import _aggregate, _record, run_ppo_episode
+from questions.q1.backtest import run_backtest as run_q1
+from questions.q2.backtest import run_backtest as run_q2
+from questions.q3.method_c.backtest import run_backtest as run_q3
+from questions.q3.method_c.core import RouteCConfig
+from questions.q3.method_c.backtest import _aggregate, _record, run_ppo_episode
 
 
 def main() -> None:
@@ -37,8 +37,8 @@ def main() -> None:
             q3_rows.append(_record(report, "ppo"))
         q3_summary.append(_aggregate(q3_rows, "ppo"))
     payload = {
-        "q1_localization": run_q1(args.episodes, 51001),
-        "q2_second_detection": run_q2(args.episodes, 52001),
+        "questions.q1": run_q1(args.episodes, 51001),
+        "questions.q2": run_q2(args.episodes, 52001),
         "q3_route_c": {
             "episodes": args.episodes,
             "targets": args.targets,

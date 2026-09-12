@@ -6,13 +6,13 @@
 
 ```text
 B题问_代码/
-├── q1_localization/              第一问：有界示向误差交会定位
+├── questions/q1/              第一问：有界示向误差交会定位
 │   ├── localization_region.py
 │   └── backtest.py
-├── q2_second_detection/          第二问：第二检测点选择
+├── questions/q2/          第二问：第二检测点选择
 │   ├── second_detection_point.py
 │   └── backtest.py
-├── q3_common/
+├── questions/q3/
 │   ├── public/                   三部分共用的坐标、误差、计时、置信区域和官方客户端
 │   ├── route_b/                  路线B独立策略
 │   ├── route_c/                  混合场景训练 PPO、回测和主控制器
@@ -79,14 +79,14 @@ outputs/part123/part123_backtest.json
 分别运行第一问和第二问：
 
 ```powershell
-conda run -n data_env python -m q1_localization.backtest --episodes 50
-conda run -n data_env python -m q2_second_detection.backtest --episodes 20
+conda run -n data_env python -m questions.q1.backtest --episodes 50
+conda run -n data_env python -m questions.q2.backtest --episodes 20
 ```
 
 第三问主控制器：
 
 ```powershell
-conda run -n data_env python -m q3_common.route_c.controller --model outputs/route_c/20260911_043624/model.zip --seed 30001 --targets 16 --profile mixed
+conda run -n data_env python -m questions.q3.method_c.controller --model outputs/route_c/20260911_043624/model.zip --seed 30001 --targets 16 --profile mixed
 ```
 
 ## 四、当前本地回测结果解释
@@ -113,14 +113,14 @@ conda run -n data_env python -m q3_common.route_c.controller --model outputs/rou
 ## 六、完整验证命令
 
 ```powershell
-conda run -n data_env python -m unittest discover -s q3_common/tests_q3 -v
+conda run -n data_env python -m unittest discover -s questions/q3/tests -v
 conda run -n data_env python part123_backtest.py --episodes 10 --targets 16 --profile mixed
 ```
 
 官方模拟器已启动并登录后，才运行真实控制器：
 
 ```powershell
-conda run --no-capture-output -n data_env python -m q3_common.route_c.official_controller --robot-id "你的参赛队号" --model outputs/route_c/<新模型目录>/model.zip
+conda run --no-capture-output -n data_env python -m questions.q3.method_c.official_controller --robot-id "你的参赛队号" --model outputs/route_c/<新模型目录>/model.zip
 ```
 
 本命令会实际调用官方接口；未启动模拟器时不要运行，运行报告会保存到 `outputs/route_c/official/`。
