@@ -1,10 +1,32 @@
 import unittest
 
 from q3_common.public.config import Rules
+from q3_common.public.models import ActionSpec
+from q3_common.public.scenario import SpatialErrorField, generate_scenario
 from q3_common.route_c.core import RouteCConfig, RouteCEnv
 
 
 class RouteCCoreTests(unittest.TestCase):
+    def test_worst_case_profile_combines_edge_min_radius_and_max_error(self):
+        scenario = generate_scenario(124, target_count=16, profile="worst_case")
+
+        self.assertTrue(all(1600.0 <= (source.point[0] ** 2 + source.point[1] ** 2) ** 0.5 <= 1800.0 for source in scenario.sources))
+        self.assertTrue(all(source.reception_radius_m == 1000.0 for source in scenario.sources))
+        self.assertIsInstance(scenario.error_field, SpatialErrorField)
+        self.assertTrue(all(value == 1.0 for value in scenario.error_field.offsets_by_channel))
+
+    def test_geometric_localization_does_not_apply_half_distance_bound(self):
+        env = RouteCEnv(Rules(), RouteCConfig(target_count=10))
+        env.reset(seed=123)
+        assert env.belief is not None and env.scenario is not None
+        channel = env.scenario.sources[0].channel
+        track = env.belief.tracks[channel]
+        track.distance_upper_bound_m = 1500.0
+
+        env._execute(ActionSpec("geo-localize-test", "LOCALIZE", (0.0, 0.0), (channel,)))
+
+        self.assertEqual(track.distance_upper_bound_m, 1500.0)
+
     def test_reset_creates_twelve_cached_candidates_without_hidden_truth(self):
         env = RouteCEnv(Rules(), RouteCConfig(target_count=10))
         observation, info = env.reset(seed=123)

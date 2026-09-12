@@ -16,6 +16,7 @@ from q3_common.public.local_search import is_clearable, next_upper_bound
 from q3_common.public.models import ActionSpec, RobotState
 from q3_common.public.scenario import Scenario, generate_scenario
 from q3_common.public.simulator import LocalSimulator
+from q3_common.route_c.framework_v2 import build_framework_candidates
 
 
 @dataclass(frozen=True)
@@ -31,6 +32,7 @@ class RouteCConfig:
     invalid_action_penalty: float = 10.0
     defer_localization_until_discovery_complete: bool = False
     nearest_scan_point: bool = True
+    framework_v2: bool = False
 
 
 @dataclass(frozen=True)
@@ -158,13 +160,16 @@ class RouteCEnv:
     def _refresh_candidates(self) -> None:
         assert self.simulator is not None and self.belief is not None
         robot = RobotState(self.simulator.position, self.simulator.current_channel)
-        self._candidates = tuple(build_candidates(
-            self.belief,
-            robot,
-            self.rules,
-            defer_localization_until_discovery_complete=self.config.defer_localization_until_discovery_complete,
-            nearest_scan_point=self.config.nearest_scan_point,
-        ))
+        if self.config.framework_v2:
+            self._candidates = tuple(build_framework_candidates(self.belief, robot, self.rules))
+        else:
+            self._candidates = tuple(build_candidates(
+                self.belief,
+                robot,
+                self.rules,
+                defer_localization_until_discovery_complete=self.config.defer_localization_until_discovery_complete,
+                nearest_scan_point=self.config.nearest_scan_point,
+            ))
         self._candidate_version += 1
 
     def _execute(self, action: ActionSpec) -> None:
@@ -173,7 +178,8 @@ class RouteCEnv:
             self.belief.record_clear(self.simulator.clear_at(action.point, action.channels[0]))
             return
         for channel in action.channels:
-            if action.kind == "LOCALIZE":
+            geometric_localize = action.kind == "LOCALIZE" and action.action_id.startswith("geo-localize-")
+            if action.kind == "LOCALIZE" and not geometric_localize:
                 track = self.belief.tracks[channel]
                 track.distance_upper_bound_m = next_upper_bound(track.distance_upper_bound_m or 1500.0)
             measurement = self.simulator.detect_at(action.point, channel)
@@ -181,7 +187,7 @@ class RouteCEnv:
             if measurement.signal == "NEAR":
                 self.belief.record_clear(self.simulator.clear_at(measurement.point, channel))
                 return
-            if action.kind == "LOCALIZE" and is_clearable(self.belief.tracks[channel].distance_upper_bound_m or 1500.0):
+            if action.kind == "LOCALIZE" and not geometric_localize and is_clearable(self.belief.tracks[channel].distance_upper_bound_m or 1500.0):
                 self.belief.record_clear(self.simulator.clear_at(action.point, channel))
                 return
 

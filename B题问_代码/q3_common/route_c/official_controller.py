@@ -22,6 +22,8 @@ from q3_common.public.models import ClearResult, Measurement, RobotState
 from q3_common.public.official_client import OfficialClientError, OfficialSimulatorClient
 from q3_common.route_c.core import RouteCConfig
 from q3_common.route_c.features import encode_observation
+from q3_common.route_c.framework_v2 import build_framework_candidates, choose_framework_v2
+from q3_common.route_c.hybrid import choose_hybrid
 
 
 @dataclass(frozen=True)
@@ -50,8 +52,8 @@ class OfficialRouteCController:
         model_path: str | Path | None = None,
         mode: str = "ppo",
     ) -> None:
-        if mode not in {"ppo", "fixed_scan"}:
-            raise ValueError("mode必须是ppo或fixed_scan")
+        if mode not in {"ppo", "fixed_scan", "hybrid", "framework_v2"}:
+            raise ValueError("mode必须是ppo、fixed_scan、hybrid或framework_v2")
         self.client = client
         self.rules = rules or Rules()
         self.config = config or RouteCConfig()
@@ -74,9 +76,12 @@ class OfficialRouteCController:
         self.virtual_time_s = 0.0
         self.command_count = 0
         self.decision_steps = 0
+        self._hybrid_locked_channel: int | None = None
 
     def _candidates(self) -> tuple[Candidate, ...]:
         robot = RobotState(self.position, self.current_channel)
+        if self.requested_mode == "framework_v2":
+            return tuple(build_framework_candidates(self.belief, robot, self.rules))
         return tuple(build_candidates(
             self.belief,
             robot,
@@ -134,6 +139,40 @@ class OfficialRouteCController:
             raise OfficialClientError(f"PPO输出非法动作: {action_id}")
         return action_id
 
+    def _hybrid_action(self, candidates: tuple[Candidate, ...]) -> int:
+        # Reuse the public candidate tuple while keeping the same policy in local and official runs.
+        class CandidateView:
+            def __init__(self, owner: "OfficialRouteCController", items: tuple[Candidate, ...]):
+                self.owner = owner
+                self.items = items
+
+            def candidates(self):
+                return self.items
+
+            def action_masks(self):
+                return [item.valid for item in self.items]
+
+            @property
+            def _hybrid_locked_channel(self):
+                return self.owner._hybrid_locked_channel
+
+            @_hybrid_locked_channel.setter
+            def _hybrid_locked_channel(self, value):
+                self.owner._hybrid_locked_channel = value
+
+        return choose_hybrid(CandidateView(self, candidates))
+
+    @staticmethod
+    def _framework_action(candidates: tuple[Candidate, ...]) -> int:
+        class CandidateView:
+            def candidates(self):
+                return candidates
+
+            def action_masks(self):
+                return [item.valid for item in candidates]
+
+        return choose_framework_v2(CandidateView())
+
     @staticmethod
     def _measurement(point: tuple[float, float], channel: int, response: dict[str, Any]) -> Measurement:
         mapping = {"no_signal": "NONE", "near": "NEAR", "direction": "BEARING"}
@@ -170,20 +209,25 @@ class OfficialRouteCController:
             self._clear(action.point, action.channels[0])
             return
         for channel in action.channels:
-            if action.kind == "LOCALIZE":
+            geometric_localize = action.kind == "LOCALIZE" and action.action_id.startswith("geo-localize-")
+            if action.kind == "LOCALIZE" and not geometric_localize:
                 track = self.belief.tracks[channel]
                 track.distance_upper_bound_m = next_upper_bound(track.distance_upper_bound_m or 1500.0)
             measurement = self._measure(action.point, channel, action.coverage_id if action.kind == "SCAN" else None)
             if measurement.signal == "NEAR":
                 self._clear(measurement.point, channel)
                 return
-            if action.kind == "LOCALIZE" and is_clearable(self.belief.tracks[channel].distance_upper_bound_m or 1500.0):
+            if action.kind == "LOCALIZE" and not geometric_localize and is_clearable(self.belief.tracks[channel].distance_upper_bound_m or 1500.0):
                 self._clear(action.point, channel)
                 return
 
     def run(self) -> OfficialRunReport:
         started = time.monotonic()
-        actual_mode = "fixed_scan" if self.requested_mode == "fixed_scan" or self.model is None else "ppo"
+        actual_mode = (
+            self.requested_mode
+            if self.requested_mode in {"fixed_scan", "hybrid", "framework_v2"}
+            else ("ppo" if self.model is not None else "fixed_scan")
+        )
         fallback_used = actual_mode != self.requested_mode
         fallback_reason = self.model_error if fallback_used else None
         completed = False
@@ -197,7 +241,14 @@ class OfficialRouteCController:
             while not self.belief.can_finish():
                 candidates = self._candidates()
                 try:
-                    index = self._ppo_action(candidates) if actual_mode == "ppo" else self._fixed_action(candidates)
+                    if actual_mode == "ppo":
+                        index = self._ppo_action(candidates)
+                    elif actual_mode == "hybrid":
+                        index = self._hybrid_action(candidates)
+                    elif actual_mode == "framework_v2":
+                        index = self._framework_action(candidates)
+                    else:
+                        index = self._fixed_action(candidates)
                 except Exception as exc:
                     if actual_mode != "ppo":
                         raise
@@ -240,7 +291,7 @@ def main() -> None:
     parser.add_argument("--base-url", default="http://127.0.0.1:2026")
     parser.add_argument("--robot-id", required=True)
     parser.add_argument("--model", type=Path, default=None)
-    parser.add_argument("--mode", choices=("ppo", "fixed_scan"), default="ppo")
+    parser.add_argument("--mode", choices=("ppo", "fixed_scan", "hybrid", "framework_v2"), default="ppo")
     parser.add_argument("--output", type=Path, default=Path("outputs/route_c/official"))
     args = parser.parse_args()
     controller = OfficialRouteCController(

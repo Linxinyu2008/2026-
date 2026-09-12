@@ -86,7 +86,7 @@ def generate_scenario(
         raise ValueError("目标数必须位于10到16")
     channels = rng.sample(range(1, 21), count)
     sources: list[Source] = []
-    if profile not in {"uniform", "edge", "clustered", "min_radius", "max_error", "mixed"}:
+    if profile not in {"uniform", "edge", "clustered", "min_radius", "max_error", "worst_case", "mixed"}:
         raise ValueError(f"未知场景profile: {profile}")
     if profile == "mixed":
         profile = rng.choice(("uniform", "edge", "clustered", "min_radius", "max_error"))
@@ -96,7 +96,7 @@ def generate_scenario(
         center_angle = rng.random() * 2.0 * pi
         cluster_center = (center_radius * cos(center_angle), center_radius * sin(center_angle))
     for channel in channels:
-        if profile == "edge":
+        if profile in {"edge", "worst_case"}:
             radius = rng.uniform(1600.0, rules.target_radius_m)
         elif profile == "clustered":
             radius = min(500.0 * sqrt(rng.random()), 1800.0 - hypot(*cluster_center))
@@ -106,12 +106,12 @@ def generate_scenario(
         point = (cluster_center[0] + radius * cos(angle), cluster_center[1] + radius * sin(angle))
         if hypot(*point) > rules.target_radius_m:
             point = (radius * cos(angle), radius * sin(angle))
-        reception = rules.min_reception_radius_m if profile == "min_radius" else rng.uniform(rules.min_reception_radius_m, rules.max_reception_radius_m)
+        reception = rules.min_reception_radius_m if profile in {"min_radius", "worst_case"} else rng.uniform(rules.min_reception_radius_m, rules.max_reception_radius_m)
         sources.append(Source(channel, point, reception))
     offsets = tuple(rng.uniform(-0.5, 0.5) for _ in range(20))
     amplitudes = tuple(rng.uniform(0.0, 0.5) for _ in range(20))
     phases = tuple(rng.random() * 2.0 * pi for _ in range(20))
-    if profile == "max_error":
+    if profile in {"max_error", "worst_case"}:
         offsets = tuple(rules.bearing_error_deg if seed % 2 == 0 else -rules.bearing_error_deg for _ in range(20))
         amplitudes = (0.0,) * 20
     return Scenario(tuple(sources), SpatialErrorField(offsets, amplitudes, phases))

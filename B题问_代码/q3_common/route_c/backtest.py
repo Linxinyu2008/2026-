@@ -18,6 +18,8 @@ from typing import Any, Callable
 
 from q3_common.public.candidates import score_candidate
 from q3_common.route_c.core import EpisodeReport, RouteCConfig, RouteCEnv
+from q3_common.route_c.hybrid import choose_hybrid
+from q3_common.route_c.framework_v2 import choose_framework_v2
 
 
 ActionSelector = Callable[[RouteCEnv, random.Random], int]
@@ -110,7 +112,10 @@ def run_backtest(seeds: list[int], config: RouteCConfig) -> tuple[list[dict[str,
         ("random", choose_random),
         ("fixed_scan", choose_fixed_scan),
         ("active", choose_active),
+        ("hybrid", choose_hybrid),
     ]
+    if config.framework_v2:
+        selectors.append(("framework_v2", choose_framework_v2))
     rows: list[dict[str, Any]] = []
     for strategy, selector in selectors:
         for seed in seeds:
@@ -126,13 +131,14 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=20001)
     parser.add_argument("--targets", type=int, default=16)
     parser.add_argument("--profile", default="uniform")
+    parser.add_argument("--framework-v2", action="store_true", help="实验：全局多站测向与几何区域定位框架")
     parser.add_argument("--model", type=Path, default=None, help="可选：MaskablePPO模型zip路径")
     parser.add_argument("--output", type=Path, default=Path("outputs/route_c/backtest"))
     args = parser.parse_args()
     if args.episodes <= 0 or args.targets <= 0:
         raise SystemExit("episodes 和 targets 必须为正数")
     seeds = [args.seed + index for index in range(args.episodes)]
-    config = RouteCConfig(target_count=args.targets, profile=args.profile)
+    config = RouteCConfig(target_count=args.targets, profile=args.profile, framework_v2=args.framework_v2)
     rows, summary = run_backtest(seeds, config)
     if args.model is not None:
         from sb3_contrib import MaskablePPO
